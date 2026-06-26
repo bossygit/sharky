@@ -12,9 +12,9 @@ return new class extends Migration
     {
         Schema::create('domain_events', function (Blueprint $table) {
             $table->id();
-            $table->string('aggregate_type');
-            $table->string('aggregate_id');
-            $table->string('type');
+            $table->string('aggregate_type', 100);
+            $table->string('aggregate_id', 100);
+            $table->string('type', 100);
             $table->json('payload');
             $table->json('metadata')->nullable();
             $table->timestamp('occurred_at')->useCurrent();
