@@ -67,7 +67,17 @@ class MigrateFromDrupalCommand extends Command
 
         if ($this->option('fresh')) {
             $this->warn('Mode --fresh : truncate des tables catalog.');
-            DB::statement('TRUNCATE TABLE product_categories, product_media, variant_media, variants, products, media, categories, brands RESTART IDENTITY CASCADE');
+            // MySQL ne supporte pas RESTART IDENTITY CASCADE (PostgreSQL uniquement)
+            DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+            DB::statement('TRUNCATE TABLE product_categories');
+            DB::statement('TRUNCATE TABLE product_media');
+            DB::statement('TRUNCATE TABLE variant_media');
+            DB::statement('TRUNCATE TABLE variants');
+            DB::statement('TRUNCATE TABLE products');
+            DB::statement('TRUNCATE TABLE media');
+            DB::statement('TRUNCATE TABLE categories');
+            DB::statement('TRUNCATE TABLE brands');
+            DB::statement('SET FOREIGN_KEY_CHECKS = 1');
         }
 
         DB::transaction(function () use ($brands, $categories, $products) {
