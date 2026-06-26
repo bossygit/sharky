@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('device', 32)->nullable();
             $table->json('flags')->nullable();
             $table->decimal('intent_score', 4, 3)->nullable();
-            $table->timestamp('started_at');
-            $table->timestamp('last_seen_at');
+            $table->timestamp('started_at')->useCurrent();
+            $table->timestamp('last_seen_at')->useCurrent();
             $table->timestamps();
         });
 
