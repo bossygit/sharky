@@ -73,10 +73,10 @@ return new class extends Migration
         Schema::create('order_payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('order_id')->constrained('orders')->cascadeOnDelete();
-            $table->string('provider');
+            $table->string('provider', 50);
             $table->string('provider_reference')->nullable();
             $table->bigInteger('amount_minor');
-            $table->string('status')->default('pending');
+            $table->string('status', 32)->default('pending');
             $table->string('idempotency_key')->unique();
             $table->json('payload')->nullable();
             $table->timestamp('webhook_received_at')->nullable();
