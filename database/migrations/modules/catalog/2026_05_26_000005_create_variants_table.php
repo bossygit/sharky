@@ -25,7 +25,7 @@ return new class extends Migration
             $table->integer('stock')->nullable();
             $table->integer('weight_grams')->nullable();
 
-            $table->jsonb('options')->nullable(); // {color, size, volume}
+            $table->json('options')->nullable(); // {color, size, volume}
 
             $table->boolean('is_default')->default(false);
             $table->string('status')->default('active'); // active | inactive

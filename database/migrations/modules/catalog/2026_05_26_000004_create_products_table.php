@@ -26,9 +26,9 @@ return new class extends Migration
             $table->text('short_description_html')->nullable();
             $table->text('description_html')->nullable();
 
-            $table->jsonb('features')->nullable();
-            $table->jsonb('specifications')->nullable();
-            $table->jsonb('faqs')->nullable();
+            $table->json('features')->nullable();
+            $table->json('specifications')->nullable();
+            $table->json('faqs')->nullable();
 
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
