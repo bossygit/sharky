@@ -16,9 +16,9 @@ return new class extends Migration
             $table->uuid('uuid')->unique();
 
             $table->integer('legacy_drupal_id')->nullable()->unique();
-            $table->string('origin')->default('backoffice'); // drupal_migration | backoffice | api_import
+            $table->string('origin')->default('backoffice');
 
-            $table->string('canonical_path')->unique(); // ex: /25/acm-... ou /produits/{slug}
+            $table->string('canonical_path')->unique();
             $table->string('slug');
 
             $table->foreignId('brand_id')->nullable()->constrained('brands')->nullOnDelete();
@@ -33,7 +33,7 @@ return new class extends Migration
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
 
-            $table->string('status')->default('draft'); // draft | published | archived
+            $table->string('status')->default('draft');
             $table->timestamp('published_at')->nullable();
 
             $table->foreignId('created_by_user_id')->nullable()->constrained('users')->nullOnDelete();
@@ -48,6 +48,7 @@ return new class extends Migration
             $table->index(['status', 'published_at']);
             $table->index('slug');
         });
+    }
 
     public function down(): void
     {
