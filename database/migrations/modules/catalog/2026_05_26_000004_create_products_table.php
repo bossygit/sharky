@@ -46,12 +46,8 @@ return new class extends Migration
             $table->softDeletes();
 
             $table->index(['status', 'published_at']);
+            $table->index('slug');
         });
-
-        // Index sur le slug (pas de contrainte unique — les slugs Drupal peuvent être en double)
-        // L'unicité est garantie par canonical_path et legacy_drupal_id
-        $table->index('slug');
-    }
 
     public function down(): void
     {
