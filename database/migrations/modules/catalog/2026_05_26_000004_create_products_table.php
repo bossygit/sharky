@@ -48,10 +48,9 @@ return new class extends Migration
             $table->index(['status', 'published_at']);
         });
 
-        // Index unique sur le slug (MySQL ne supporte pas les partial indexes de PostgreSQL)
-        // Pour éviter les conflits avec les slugs Drupal, on utilise un index unique simple
-        // Les slugs en doublon seront gérés au niveau applicatif pendant la migration
-        DB::statement("CREATE UNIQUE INDEX uniq_products_new_slug ON products(slug)");
+        // Index sur le slug (pas de contrainte unique — les slugs Drupal peuvent être en double)
+        // L'unicité est garantie par canonical_path et legacy_drupal_id
+        $table->index('slug');
     }
 
     public function down(): void
