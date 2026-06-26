@@ -1,0 +1,14 @@
+{
+  "name": "nasande-drupal-export",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Export complet des produits Drupal Commerce depuis https://nasande.cg vers JSON + images locales.",
+  "scripts": {
+    "export": "node export-drupal-products.js",
+    "export:verbose": "VERBOSE=1 node export-drupal-products.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

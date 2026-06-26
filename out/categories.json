@@ -1,0 +1,378 @@
+[
+  {
+    "id": "de259c01-cbea-4773-96dd-60bf59a8727c",
+    "type": "taxonomy_term--product",
+    "drupal_id": 78,
+    "name": "Hygiène",
+    "description": null,
+    "path": "/product/hygiene"
+  },
+  {
+    "id": "0a6814cd-3f77-455d-b5da-6f9e2c0679e5",
+    "type": "taxonomy_term--product",
+    "drupal_id": 132,
+    "name": "Gel",
+    "description": null,
+    "path": "/product/gel"
+  },
+  {
+    "id": "781a2ad2-eee8-4570-8749-f0a5689ec264",
+    "type": "taxonomy_term--product",
+    "drupal_id": 142,
+    "name": "Protection soleil",
+    "description": null,
+    "path": "/product/protection-soleil"
+  },
+  {
+    "id": "4b95205f-716b-4292-9298-1b2050ad1c53",
+    "type": "taxonomy_term--product",
+    "drupal_id": 140,
+    "name": "Rasage",
+    "description": null,
+    "path": "/product/rasage"
+  },
+  {
+    "id": "c7fef900-b888-40e9-a3ec-638293e1212f",
+    "type": "taxonomy_term--product",
+    "drupal_id": 153,
+    "name": "Sucette Tétine et Biberon",
+    "description": null,
+    "path": "/product/sucette-tetine-et-biberon"
+  },
+  {
+    "id": "c5ee598c-3e5c-4e32-9e82-a2f54f3792a0",
+    "type": "taxonomy_term--product",
+    "drupal_id": 143,
+    "name": "Baume",
+    "description": null,
+    "path": "/product/baume"
+  },
+  {
+    "id": "a7ee75e1-b857-4443-bfbb-b27640ac72c0",
+    "type": "taxonomy_term--product",
+    "drupal_id": 75,
+    "name": "Visage",
+    "description": null,
+    "path": "/product/visage"
+  },
+  {
+    "id": "d01c29d5-e48b-4f7c-a4f4-0987938d16c5",
+    "type": "taxonomy_term--product",
+    "drupal_id": 124,
+    "name": "Huile",
+    "description": null,
+    "path": "/product/huile"
+  },
+  {
+    "id": "bb72429f-242b-49df-9730-3b4b602d5f77",
+    "type": "taxonomy_term--product",
+    "drupal_id": 129,
+    "name": "Lotion",
+    "description": null,
+    "path": "/product/lotion"
+  },
+  {
+    "id": "0bb92f6b-3682-43b1-abb7-ce877e167253",
+    "type": "taxonomy_term--product",
+    "drupal_id": 139,
+    "name": "Fluide",
+    "description": null,
+    "path": "/product/fluide"
+  },
+  {
+    "id": "87caeabc-d003-4a12-bc03-7d5d3b2b264a",
+    "type": "taxonomy_term--product",
+    "drupal_id": 130,
+    "name": "Lait",
+    "description": null,
+    "path": "/product/lait"
+  },
+  {
+    "id": "908e3560-981b-4cc0-9bcb-9710630e23c5",
+    "type": "taxonomy_term--product",
+    "drupal_id": 77,
+    "name": "Beauté",
+    "description": null,
+    "path": "/product/beaute"
+  },
+  {
+    "id": "3179e494-2fcf-4f33-9757-0d45b593f877",
+    "type": "taxonomy_term--product",
+    "drupal_id": 131,
+    "name": "Crème",
+    "description": null,
+    "path": "/product/creme"
+  },
+  {
+    "id": "3b0dc7e1-d97a-4a62-9ae3-63d4f291b630",
+    "type": "taxonomy_term--product",
+    "drupal_id": 79,
+    "name": "Vernis",
+    "description": null,
+    "path": "/product/vernis"
+  },
+  {
+    "id": "40fad836-e0bb-4d67-97b1-b113e6f94dc4",
+    "type": "taxonomy_term--product",
+    "drupal_id": 126,
+    "name": "Masque",
+    "description": null,
+    "path": "/product/masque"
+  },
+  {
+    "id": "501311a9-fb75-4b40-a05b-03372eca5e51",
+    "type": "taxonomy_term--product",
+    "drupal_id": 125,
+    "name": "Shampoing",
+    "description": null,
+    "path": "/product/shampoing"
+  },
+  {
+    "id": "2e7a021f-bfac-4925-9bcb-833779b3fd71",
+    "type": "taxonomy_term--product",
+    "drupal_id": 74,
+    "name": "Cheveux",
+    "description": null,
+    "path": "/product/cheveux"
+  },
+  {
+    "id": "387b597e-1059-40ae-a683-17b2727a1543",
+    "type": "taxonomy_term--product",
+    "drupal_id": 76,
+    "name": "Peau",
+    "description": null,
+    "path": "/product/peau"
+  },
+  {
+    "id": "14c91f15-2338-479a-957d-4e24f372e0ab",
+    "type": "taxonomy_term--product",
+    "drupal_id": 136,
+    "name": "Bébé Shampoing",
+    "description": null,
+    "path": "/product/bebe-shampoing"
+  },
+  {
+    "id": "fd824560-e854-4d99-81b2-d7e1d858eebe",
+    "type": "taxonomy_term--product",
+    "drupal_id": 145,
+    "name": "Bébé Huile",
+    "description": null,
+    "path": "/product/bebe-huile"
+  },
+  {
+    "id": "4b626b8c-be92-4740-a6c1-a749eb9ee802",
+    "type": "taxonomy_term--product",
+    "drupal_id": 154,
+    "name": "Stick Lèvres",
+    "description": null,
+    "path": "/product/stick-levres"
+  },
+  {
+    "id": "b974306d-a117-4c99-9c8a-b07bd2cc4d1b",
+    "type": "taxonomy_term--product",
+    "drupal_id": 127,
+    "name": "Eau",
+    "description": null,
+    "path": "/product/eau"
+  },
+  {
+    "id": "69b7cef5-da65-4c5f-aeec-0df5bf28f772",
+    "type": "taxonomy_term--product",
+    "drupal_id": 134,
+    "name": "Démaquillant",
+    "description": null,
+    "path": "/product/demaquillant"
+  },
+  {
+    "id": "8c2b01db-737d-41aa-bb13-275b37a479a3",
+    "type": "taxonomy_term--product",
+    "drupal_id": 133,
+    "name": "Savon",
+    "description": null,
+    "path": "/product/savon"
+  },
+  {
+    "id": "ace26f39-bec6-431d-bd62-947b69534c0c",
+    "type": "taxonomy_term--product",
+    "drupal_id": 149,
+    "name": "Sérum",
+    "description": null,
+    "path": "/product/serum"
+  },
+  {
+    "id": "f865c0b0-53dc-4364-b186-e035fce0d6b8",
+    "type": "taxonomy_term--product",
+    "drupal_id": 151,
+    "name": "Bouton et Acne",
+    "description": null,
+    "path": "/product/bouton-et-acne"
+  },
+  {
+    "id": "18f7dd4d-aa30-46df-a01d-3fcd65de59d6",
+    "type": "taxonomy_term--product",
+    "drupal_id": 147,
+    "name": "Bébé crème",
+    "description": null,
+    "path": "/product/bebe-creme"
+  },
+  {
+    "id": "d3e3f154-b546-4e1a-a4e4-8464b4c623c6",
+    "type": "taxonomy_term--product",
+    "drupal_id": 144,
+    "name": "Bébé Lait",
+    "description": null,
+    "path": "/product/bebe-lait"
+  },
+  {
+    "id": "0c1a1bed-7eb3-4bf5-a69c-f284b7a49e8a",
+    "type": "taxonomy_term--product",
+    "drupal_id": 80,
+    "name": "Déodorants et Parfums",
+    "description": null,
+    "path": "/product/deodorants-et-parfums"
+  },
+  {
+    "id": "5f41cde6-d5f3-40da-a36b-6ec475f509a1",
+    "type": "taxonomy_term--product",
+    "drupal_id": 155,
+    "name": "Hygiène Intime et Corporelle",
+    "description": null,
+    "path": "/product/hygiene-intime-et-corporelle"
+  },
+  {
+    "id": "db8f96da-3033-4f58-8bc0-4ec7e4555e0b",
+    "type": "taxonomy_term--product",
+    "drupal_id": 81,
+    "name": "Bébé",
+    "description": null,
+    "path": "/product/bebe"
+  },
+  {
+    "id": "2e84c9f5-5be8-4b17-bb1a-9e79cd40a8b5",
+    "type": "taxonomy_term--product",
+    "drupal_id": 146,
+    "name": "Bébé Eau",
+    "description": null,
+    "path": "/product/bebe-eau"
+  },
+  {
+    "id": "121bb039-d5fa-4f29-a02f-d7e427ed1adf",
+    "type": "taxonomy_term--product",
+    "drupal_id": 163,
+    "name": "Repas",
+    "description": null,
+    "path": "/product/repas"
+  },
+  {
+    "id": "7ed3f274-29ba-4e8c-b58d-d19399d390f3",
+    "type": "taxonomy_term--product",
+    "drupal_id": 135,
+    "name": "Bébé Savon",
+    "description": null,
+    "path": "/product/bebe-savon"
+  },
+  {
+    "id": "e49468de-45d2-420f-ad69-c6e2698cfc13",
+    "type": "taxonomy_term--product",
+    "drupal_id": 148,
+    "name": "Démêlant",
+    "description": null,
+    "path": "/product/demelant"
+  },
+  {
+    "id": "cd5c19ba-81e9-449f-ba69-8077a19f839d",
+    "type": "taxonomy_term--product",
+    "drupal_id": 150,
+    "name": "Glycérine",
+    "description": null,
+    "path": "/product/glycerine"
+  },
+  {
+    "id": "b928bd11-c4a2-4223-b3a2-445f00f99327",
+    "type": "taxonomy_term--product",
+    "drupal_id": 118,
+    "name": "Sexualité",
+    "description": null,
+    "path": "/product/sexualite"
+  },
+  {
+    "id": "f6dfbf78-d896-4c18-9848-81d5535a0e64",
+    "type": "taxonomy_term--product",
+    "drupal_id": 137,
+    "name": "Bébé Gel",
+    "description": null,
+    "path": "/product/bebe-gel"
+  },
+  {
+    "id": "35368ac7-5776-4fa6-9929-ae69a2f71ff8",
+    "type": "taxonomy_term--product",
+    "drupal_id": 138,
+    "name": "Bébé Poudre",
+    "description": null,
+    "path": "/product/bebe-poudre"
+  },
+  {
+    "id": "754ef2cd-cc22-46de-966f-81ee4c22ca99",
+    "type": "taxonomy_term--product",
+    "drupal_id": 152,
+    "name": "Lingette",
+    "description": null,
+    "path": "/product/lingette"
+  },
+  {
+    "id": "403e1926-8bb4-45d6-8171-af972f6c1618",
+    "type": "taxonomy_term--product",
+    "drupal_id": 158,
+    "name": "Dessert",
+    "description": null,
+    "path": "/product/dessert"
+  },
+  {
+    "id": "f7a803f0-6589-48b2-b4aa-7b233ffa34fa",
+    "type": "taxonomy_term--product",
+    "drupal_id": 164,
+    "name": "Covid",
+    "description": null,
+    "path": "/product/covid"
+  },
+  {
+    "id": "66d4b8b7-9bac-4bdd-8c4b-13f837bc3862",
+    "type": "taxonomy_term--product",
+    "drupal_id": 117,
+    "name": "Huile Essentielle",
+    "description": null,
+    "path": "/product/huile-essentielle"
+  },
+  {
+    "id": "a735e565-699c-487e-8a3a-400a9740b170",
+    "type": "taxonomy_term--product",
+    "drupal_id": 182,
+    "name": "Thé",
+    "description": null,
+    "path": "/product/the"
+  },
+  {
+    "id": "81b09419-5939-479c-968d-c7392e7f2d9e",
+    "type": "taxonomy_term--product",
+    "drupal_id": 120,
+    "name": "Santé et Bien-être",
+    "description": null,
+    "path": "/product/sante-et-bien-etre"
+  },
+  {
+    "id": "5dd1d4a1-9628-428f-9105-eb8eb938f71e",
+    "type": "taxonomy_term--product",
+    "drupal_id": 156,
+    "name": "Produit laitier",
+    "description": null,
+    "path": "/product/produit-laitier"
+  },
+  {
+    "id": "ad6f9ff6-838a-429f-8b54-b6771192770a",
+    "type": "taxonomy_term--product",
+    "drupal_id": 157,
+    "name": "Farine",
+    "description": null,
+    "path": "/product/farine"
+  }
+]

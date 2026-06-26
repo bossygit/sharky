@@ -1,0 +1,430 @@
+{
+  "base_url": "https://nasande.cg",
+  "generated_at": "2026-05-25T14:08:52.874Z",
+  "duration_ms": 14249,
+  "counts": {
+    "products": 741,
+    "variations": 756,
+    "products_without_image": 10,
+    "images_unique": 753,
+    "images_available_locally": 671,
+    "images_skipped_existing": 671,
+    "images_failed": 82,
+    "brands": 70,
+    "categories": 47,
+    "origines": 1,
+    "total_bytes_images": 86070582
+  },
+  "image_failures": [
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Prot%C3%A8ge-slips%20ALWAYS%20DAILIES%20Extra%20Protect%20Large.png",
+      "file": "482_Prot_ge-slips_ALWAYS_DAILIES_Extra_Protect_Large.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Prot%C3%A8ge-slips%20ALWAYS%20DAILIES%20Extra%20Protect%20Large.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Covergirl-Continu-Couleur-Rouge-%C3%A0-L%C3%A8vres.jpg",
+      "file": "455_Covergirl-Continu-Couleur-Rouge-_-L_vres.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Covergirl-Continu-Couleur-Rouge-%C3%A0-L%C3%A8vres.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Le%20Petit%20Mars%20Cr%C3%A8me%20Main%20Apaisant.jpg",
+      "file": "421_Le_Petit_Mars_Cr_me_Main_Apaisant.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Le%20Petit%20Mars%20Cr%C3%A8me%20Main%20Apaisant.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Makari%20Cr%C3%A8me%20Solaire%20Spf.jpg",
+      "file": "419_Makari_Cr_me_Solaire_Spf.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Makari%20Cr%C3%A8me%20Solaire%20Spf.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Eau%20De%20Toilette%20200ml.jpg",
+      "file": "674_Biolane_B_b_Eau_De_Toilette_200ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Eau%20De%20Toilette%20200ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Cr%C3%A8me%20Nourrissante%20Et%20Hydratante.jpg",
+      "file": "673_Cr_me_Nourrissante_Et_Hydratante.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Cr%C3%A8me%20Nourrissante%20Et%20Hydratante.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Change%2075ml.png",
+      "file": "668_Ch_teau_Rouge_Cr_me_Change_75ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Change%2075ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Gommage%20Visage%20Eclaircissant.jpg",
+      "file": "667_Ch_teau_Rouge_Cr_me_Gommage_Visage_Eclaircissant.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Gommage%20Visage%20Eclaircissant.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Prestige%20Hydratant%2050ml.png",
+      "file": "666_Ch_teau_Rouge_Cr_me_Prestige_Hydratant_50ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Prestige%20Hydratant%2050ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Huile%20Beaute%20Unifiant%20100ml.png",
+      "file": "665_Ch_teau_Rouge_Huile_Beaute_Unifiant_100ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Huile%20Beaute%20Unifiant%20100ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Lait%20Ultra%20Hydratant%2024h%20500ml.png",
+      "file": "664_Ch_teau_Rouge_Lait_Ultra_Hydratant_24h_500ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Lait%20Ultra%20Hydratant%2024h%20500ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Masque%20Clarte%20Argile.jpg",
+      "file": "663_Ch_teau_Rouge_Masque_Clarte_Argile.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Masque%20Clarte%20Argile.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Men%20Baume%20Apr%C3%A8s-Rasage%2050ml.png",
+      "file": "662_Ch_teau_Rouge_Men_Baume_Apr_s-Rasage_50ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Men%20Baume%20Apr%C3%A8s-Rasage%2050ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Serogel%2030ml.png",
+      "file": "661_Ch_teau_Rouge_Serogel_30ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Serogel%2030ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/ACM%20Depiwhite%20Advanced%20Cr%C3%A8me.jpg",
+      "file": "648_ACM_Depiwhite_Advanced_Cr_me.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/ACM%20Depiwhite%20Advanced%20Cr%C3%A8me.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Exfoliac%20Cr%C3%A8me%20Reparatrice%2040ml.jpg",
+      "file": "645_Exfoliac_Cr_me_Reparatrice_40ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Exfoliac%20Cr%C3%A8me%20Reparatrice%2040ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Garnier%20Fructis%20Apr%C3%A8s%20Shampoo%20Color%20Resist.png",
+      "file": "641_Garnier_Fructis_Apr_s_Shampoo_Color_Resist.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Garnier%20Fructis%20Apr%C3%A8s%20Shampoo%20Color%20Resist.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ht%2026%20Lotion%20Intensive%20Concentr%C3%A9e.png",
+      "file": "632_Ht_26_Lotion_Intensive_Concentr_e.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ht%2026%20Lotion%20Intensive%20Concentr%C3%A9e.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Klorane%20B%C3%A9b%C3%A9%20Savon%20Surgras.jpg",
+      "file": "629_Klorane_B_b_Savon_Surgras.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Klorane%20B%C3%A9b%C3%A9%20Savon%20Surgras.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/La%20Roche-Posay%20Effaclar%20A.I.%20Correcteur%20Cibl%C3%A9%20des%20%C3%89ruptions%20Cutan%C3%A9es.jpg",
+      "file": "626_La_Roche-Posay_Effaclar_A.I._Correcteur_Cibl_des_ruptions_Cutan_es.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/La%20Roche-Posay%20Effaclar%20A.I.%20Correcteur%20Cibl%C3%A9%20des%20%C3%89ruptions%20Cutan%C3%A9es.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mustela%20B%C3%A9b%C3%A9%20Shampoo%20Doux.jpg",
+      "file": "740_Mustela_B_b_Shampoo_Doux.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mustela%20B%C3%A9b%C3%A9%20Shampoo%20Doux.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Tex%20Baby%20Mouche%20B%C3%A9b%C3%A9.jpg",
+      "file": "733_Tex_Baby_Mouche_B_b_.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Tex%20Baby%20Mouche%20B%C3%A9b%C3%A9.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Topicrem%20B%C3%A9b%C3%A9%201er%20Lait%20Ultra%20Hydratant%20500ml.jpg",
+      "file": "697_Topicrem_B_b_1er_Lait_Ultra_Hydratant_500ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Topicrem%20B%C3%A9b%C3%A9%201er%20Lait%20Ultra%20Hydratant%20500ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Topicrem%20Cica%20Cr%C3%A8me%20Reparatrice%2040ml.jpg",
+      "file": "696_Topicrem_Cica_Cr_me_Reparatrice_40ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Topicrem%20Cica%20Cr%C3%A8me%20Reparatrice%2040ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Topicrem%20Cr%C3%A8me%20Ultra%20Hydra%20Visage.jpg",
+      "file": "695_Topicrem_Cr_me_Ultra_Hydra_Visage.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Topicrem%20Cr%C3%A8me%20Ultra%20Hydra%20Visage.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Uriage%20B%C3%A9b%C3%A9%201ere%20Creme%20Lavante%20500ml.jpg",
+      "file": "692_Uriage_B_b_1ere_Creme_Lavante_500ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Uriage%20B%C3%A9b%C3%A9%201ere%20Creme%20Lavante%20500ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Uriage%20B%C3%A9b%C3%A9%201er%20Lait%20Hydratant.jpg",
+      "file": "693_Uriage_B_b_1er_Lait_Hydratant.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Uriage%20B%C3%A9b%C3%A9%201er%20Lait%20Hydratant.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Vegebom%20Cr%C3%A8me%20Chauffante.jpg",
+      "file": "690_Vegebom_Cr_me_Chauffante.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Vegebom%20Cr%C3%A8me%20Chauffante.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Aida%20Cr%C3%A8me%20Anti%20Tache%2040ml.png",
+      "file": "731_Aida_Cr_me_Anti_Tache_40ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Aida%20Cr%C3%A8me%20Anti%20Tache%2040ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Huile%20Amand%20Spray.jpg",
+      "file": "713_Biolane_B_b_Huile_Amand_Spray.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Huile%20Amand%20Spray.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Lait%20200ml.jpg",
+      "file": "711_Biolane_B_b_Lait_200ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Lait%20200ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Shampooing%20Doux%20Fl300ml.jpg",
+      "file": "710_Biolane_B_b_Shampooing_Doux_Fl300ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Shampooing%20Doux%20Fl300ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/mixa%20fra%C3%AEcheur%20lait%20de%20beaut%C3%A9%20rafra%C3%AEchissant.png",
+      "file": "1024_mixa_fra_cheur_lait_de_beaut_rafra_chissant.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/mixa%20fra%C3%AEcheur%20lait%20de%20beaut%C3%A9%20rafra%C3%AEchissant.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mustela%20B%C3%A9b%C3%A9%20Lait%20Hydra%20300ml.jpg",
+      "file": "829_Mustela_B_b_Lait_Hydra_300ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mustela%20B%C3%A9b%C3%A9%20Lait%20Hydra%20300ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mustela%20Peau%20S%C3%A8che%20Lait%20Nourrissant%20%20Cold%20Cream%20200ml.jpg",
+      "file": "828_Mustela_Peau_S_che_Lait_Nourrissant_Cold_Cream_200ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mustela%20Peau%20S%C3%A8che%20Lait%20Nourrissant%20%20Cold%20Cream%20200ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Carotte.jpg",
+      "file": "808_Pr.Fran_oise_Bedon_Carotte.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Carotte.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Homme.jpg",
+      "file": "807_Pr.Fran_oise_Bedon_Homme.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Homme.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Qei%2B%20Cr%C3%A8me%20Eclaircissante%20Oriental.jpg",
+      "file": "803_Qei_Cr_me_Eclaircissante_Oriental.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Qei%2B%20Cr%C3%A8me%20Eclaircissante%20Oriental.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Qei%2B%20Cr%C3%A8me%20Eclaircissante%20Performance.jpg",
+      "file": "801_Qei_Cr_me_Eclaircissante_Performance.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Qei%2B%20Cr%C3%A8me%20Eclaircissante%20Performance.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Intime%20Secheresse%20500ml.png",
+      "file": "789_Rog_Cavaill_s_Intime_Secheresse_500ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Intime%20Secheresse%20500ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Surgras%20Classic%20150g.png",
+      "file": "787_Rog_Cavaill_s_Savon_Surgras_Classic_150g.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Surgras%20Classic%20150g.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Vegebom%20Lait%20Adoucissant%20Au%20Beurre%20De%20Karit%C3%A9.jpg",
+      "file": "768_Vegebom_Lait_Adoucissant_Au_Beurre_De_Karit_.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Vegebom%20Lait%20Adoucissant%20Au%20Beurre%20De%20Karit%C3%A9.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Baume%20Apr%C3%A8s%20Rasage%2050ml.png",
+      "file": "778_Ch_teau_Rouge_Baume_Apr_s_Rasage_50ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Baume%20Apr%C3%A8s%20Rasage%2050ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20B%C3%A9b%C3%A9%20Savon%20Surgras%20150g.jpg",
+      "file": "777_Ch_teau_Rouge_B_b_Savon_Surgras_150g.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20B%C3%A9b%C3%A9%20Savon%20Surgras%20150g.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Gel%20Moussant%20Nettoyant%20Visage%20Corps.jpg",
+      "file": "776_Ch_teau_Rouge_Gel_Moussant_Nettoyant_Visage_Corps.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Gel%20Moussant%20Nettoyant%20Visage%20Corps.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Savon%20Exfoliant%20Abricot.png",
+      "file": "775_Ch_teau_Rouge_Savon_Exfoliant_Abricot.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Savon%20Exfoliant%20Abricot.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Makari%20Le%20Petit%20Marseillais%20Cr%C3%A8me%20Mains%20Nutrition.png",
+      "file": "765_Makari_Le_Petit_Marseillais_Cr_me_Mains_Nutrition.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Makari%20Le%20Petit%20Marseillais%20Cr%C3%A8me%20Mains%20Nutrition.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Oe%20Cr%C3%A8me%20Depilatoire%20Argan.png",
+      "file": "895_Oe_Cr_me_Depilatoire_Argan.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Oe%20Cr%C3%A8me%20Depilatoire%20Argan.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Puissance.jpg",
+      "file": "889_Pr.Fran_oise_Bedon_Puissance.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Puissance.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Gel%20Corps%20Cheveux%202%20en%201.jpg",
+      "file": "911_Biolane_B_b_Gel_Corps_Cheveux_2_en_1.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Gel%20Corps%20Cheveux%202%20en%201.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Savon%20Doux%20Surgras.png",
+      "file": "912_Biolane_B_b_Savon_Doux_Surgras.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Savon%20Doux%20Surgras.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Klorane%20B%C3%A9b%C3%A9%20Poudre%20Toilette%20100g.jpg",
+      "file": "902_Klorane_B_b_Poudre_Toilette_100g.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Klorane%20B%C3%A9b%C3%A9%20Poudre%20Toilette%20100g.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Le%20Petit%20Marseillais%20Cr%C3%A8me%20Mains%20Reparation.png",
+      "file": "900_Le_Petit_Marseillais_Cr_me_Mains_Reparation.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Le%20Petit%20Marseillais%20Cr%C3%A8me%20Mains%20Reparation.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Neutrogena%20Men%20Shave%20Cr%C3%A8me_0.jpg",
+      "file": "867_Neutrogena_Men_Shave_Cr_me_0.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Neutrogena%20Men%20Shave%20Cr%C3%A8me_0.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Soin%20Visage%20Hydratant.png",
+      "file": "856_Rog_Cavaill_s_Soin_Visage_Hydratant.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Soin%20Visage%20Hydratant.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Lait%20750ml.jpg",
+      "file": "854_Biolane_B_b_Lait_750ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Lait%20750ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Concentr%C3%A9e%20Eclaircissant%2050.png",
+      "file": "853_Ch_teau_Rouge_Cr_me_Concentr_e_Eclaircissant_50.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Cr%C3%A8me%20Concentr%C3%A9e%20Eclaircissant%2050.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ht%2026%20Topsygel%20Cr%C3%A8me%20Eclaircissant.jpg",
+      "file": "852_Ht_26_Topsygel_Cr_me_Eclaircissant.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ht%2026%20Topsygel%20Cr%C3%A8me%20Eclaircissant.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mahia%20Cr%C3%A8me%20Amincissante%20125ml.jpg",
+      "file": "1000_Mahia_Cr_me_Amincissante_125ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mahia%20Cr%C3%A8me%20Amincissante%20125ml.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Qei%2B%20Cr%C3%A8me%20Eclaircissant%20Harmonie.jpg",
+      "file": "969_Qei_Cr_me_Eclaircissant_Harmonie.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Qei%2B%20Cr%C3%A8me%20Eclaircissant%20Harmonie.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ht%2026%20Action%20Tache%20Cr%C3%A8me.jpg",
+      "file": "984_Ht_26_Action_Tache_Cr_me.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ht%2026%20Action%20Tache%20Cr%C3%A8me.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Laino%20P%C3%A2te%20Argile%20Verte%20Visage%20Corps.jpg",
+      "file": "983_Laino_P_te_Argile_Verte_Visage_Corps.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Laino%20P%C3%A2te%20Argile%20Verte%20Visage%20Corps.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Lotion%20Unifiante.jpg",
+      "file": "970_Pr.Fran_oise_Bedon_Lotion_Unifiante.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Pr.Fran%C3%A7oise%20Bedon%20Lotion%20Unifiante.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mustela%20B%C3%A9b%C3%A9%20Savon%20Surgras%20150g.jpg",
+      "file": "977_Mustela_B_b_Savon_Surgras_150g.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mustela%20B%C3%A9b%C3%A9%20Savon%20Surgras%20150g.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Savon%20Douche%20Surgras%20150g.jpg",
+      "file": "988_Ch_teau_Rouge_Savon_Douche_Surgras_150g.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Ch%C3%A2teau%20Rouge%20Savon%20Douche%20Surgras%20150g.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Talc%20Apaisant.jpg",
+      "file": "962_Biolane_B_b_Talc_Apaisant.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Biolane%20B%C3%A9b%C3%A9%20Talc%20Apaisant.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Surgras%20Lait%20Et%20Miel.jpg",
+      "file": "952_Rog_Cavaill_s_Savon_Surgras_Lait_Et_Miel.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Surgras%20Lait%20Et%20Miel.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Surgras%20Lait%20Rose.jpg",
+      "file": "953_Rog_Cavaill_s_Savon_Surgras_Lait_Rose.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Surgras%20Lait%20Rose.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Huile%20V%C3%A9g%C3%A9tale%20%20Baobab%20261.jpg",
+      "file": "1059_Huile_V_g_tale_Baobab_261.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Huile%20V%C3%A9g%C3%A9tale%20%20Baobab%20261.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Lait%20Miel.jpg",
+      "file": "954_Rog_Cavaill_s_Savon_Lait_Miel.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Rog%C3%A9%20Cavaill%C3%A8s%20Savon%20Lait%20Miel.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Gilbert%20Glyc%C3%A9rine.jpg",
+      "file": "949_Gilbert_Glyc_rine.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Gilbert%20Glyc%C3%A9rine.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Gel%20d%C3%A9sinfectant%20Monganga%20350%20ml.png",
+      "file": "1008_Gel_d_sinfectant_Monganga_350_ml.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Gel%20d%C3%A9sinfectant%20Monganga%20350%20ml.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Gel%20d%C3%A9sinfectant%20Monganga%20350%20ml_0.png",
+      "file": "1009_Gel_d_sinfectant_Monganga_350_ml_0.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Gel%20d%C3%A9sinfectant%20Monganga%20350%20ml_0.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mixa%20intensif%20peaux%20s%C3%A8ches%20cr%C3%A8me%20mains%20r%C3%A9paratrices.png",
+      "file": "1021_Mixa_intensif_peaux_s_ches_cr_me_mains_r_paratrices.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mixa%20intensif%20peaux%20s%C3%A8ches%20cr%C3%A8me%20mains%20r%C3%A9paratrices.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mixa%20nutrition%20lait%20de%20beaut%C3%A9%20anti%20dess%C3%A8chement.png",
+      "file": "1022_Mixa_nutrition_lait_de_beaut_anti_dess_chement.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mixa%20nutrition%20lait%20de%20beaut%C3%A9%20anti%20dess%C3%A8chement.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mixa%20nutrition%20lait%20de%20beaut%C3%A9%20anti%20dess%C3%A8chement_0.png",
+      "file": "1023_Mixa_nutrition_lait_de_beaut_anti_dess_chement_0.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mixa%20nutrition%20lait%20de%20beaut%C3%A9%20anti%20dess%C3%A8chement_0.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/Mixa%20b%C3%A9b%C3%A9%20shampooing%20d%C3%A9m%C3%AAlant.png",
+      "file": "1036_Mixa_b_b_shampooing_d_m_lant.png",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/Mixa%20b%C3%A9b%C3%A9%20shampooing%20d%C3%A9m%C3%AAlant.png"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/france%20lait%20bl%C3%A9%20biscuit.jpg",
+      "file": "1134_france_lait_bl_biscuit.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/france%20lait%20bl%C3%A9%20biscuit.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/france%20lait%20bl%C3%A9%20et%20miel.jpg",
+      "file": "1135_france_lait_bl_et_miel.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/france%20lait%20bl%C3%A9%20et%20miel.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/france%20lait%20bl%C3%A9%20fruits.jpg",
+      "file": "1136_france_lait_bl_fruits.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/france%20lait%20bl%C3%A9%20fruits.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/bledine%20l%C3%A9gumes.jpg",
+      "file": "1156_bledine_l_gumes.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/bledine%20l%C3%A9gumes.jpg"
+    },
+    {
+      "url": "https://nasande.cg/sites/default/files/products/klorane-b%C3%A9b%C3%A9-lait-de-toilette-sans-rincage-750ml.jpg",
+      "file": "1106_klorane-b_b_-lait-de-toilette-sans-rincage-750ml.jpg",
+      "error": "HTTP 404 on https://nasande.cg/sites/default/files/products/klorane-b%C3%A9b%C3%A9-lait-de-toilette-sans-rincage-750ml.jpg"
+    }
+  ]
+}

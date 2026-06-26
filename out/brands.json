@@ -1,0 +1,562 @@
+[
+  {
+    "id": "af4bcbc0-bc5f-471f-9d20-9f27f0e720b0",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 50,
+    "name": "ACM",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "79b8c5f3-333b-4e5c-b4eb-14d8342ecb9c",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 51,
+    "name": "A-Derma",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "032a38cd-f4f8-46b8-975b-ad9dc900b42a",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 52,
+    "name": "Always",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "43e59bfd-dc29-4d74-b16b-e512b0364fe4",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 53,
+    "name": "Avene",
+    "description": null,
+    "path": "/brand/avene"
+  },
+  {
+    "id": "37a6af7b-cf68-40bf-8dd9-5685b857a83e",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 54,
+    "name": "Avent",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "30c3a7f0-7eb4-4e2d-badc-b54c4b7c47cf",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 55,
+    "name": "Bioderma",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "8c9596f7-c128-4829-a8dd-87d340d5eb11",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 56,
+    "name": "Candes",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "36493ea4-4eb0-4b7b-93f4-0a5ef294e0c5",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 57,
+    "name": "Château Rouge",
+    "description": null,
+    "path": "/brand/chateau-rouge"
+  },
+  {
+    "id": "0e6cbcf6-7b5a-4c24-acf0-347191432120",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 58,
+    "name": "Clairissime",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "f981ec9d-8a3f-42cf-9ea2-f5359940edf3",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 59,
+    "name": "Cover Girl",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "72857273-bb2a-4f1e-902b-def417bd1270",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 61,
+    "name": "Ducray",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "124157a2-95cd-4780-ad6b-b90f6c296ea4",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 62,
+    "name": "Essie",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "7c7ed8ed-87b4-47f2-98ee-3c0d48ef6e6d",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 63,
+    "name": "Exfoliac",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "382f0034-d52d-4ad7-9e6c-488325d506a3",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 64,
+    "name": "Garnier",
+    "description": null,
+    "path": "/brand/garnier"
+  },
+  {
+    "id": "158f62d9-fde0-4861-b891-fd896c746fc1",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 65,
+    "name": "Ht 26",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "252dd294-b932-4e11-adbb-16e1156fc1d2",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 66,
+    "name": "Johnson",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "764873d3-578c-4ce9-9fb8-a495f856b1c7",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 67,
+    "name": "Laino",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "c34b150f-9a5f-45dc-9115-1873e3f7b337",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 68,
+    "name": "La Roche Posay",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "b417444a-a033-41f0-8914-fd1377784ca9",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 69,
+    "name": "Le Petit Marseillais",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "ac5d8b0b-cbc7-4a33-8e59-57544acd7e19",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 70,
+    "name": "L'Oréal",
+    "description": null,
+    "path": "/brand/loreal"
+  },
+  {
+    "id": "3ad837f9-b96d-48c2-a99d-d1ff53f7359d",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 71,
+    "name": "Makari",
+    "description": null,
+    "path": "/brand/makari"
+  },
+  {
+    "id": "b19d5787-200c-4eea-9364-e4649aace7ca",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 72,
+    "name": "Mam",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "0f68ece0-9ebb-4d5a-9727-6f1cf45e31d8",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 73,
+    "name": "Maybelline",
+    "description": null,
+    "path": "/brand/maybelline"
+  },
+  {
+    "id": "dd3f2215-b135-4eda-9215-b22d3107c132",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 82,
+    "name": "Mixa",
+    "description": null,
+    "path": "/brand/mixa"
+  },
+  {
+    "id": "876aad68-fa5e-44cc-8c2a-f807f2a6790b",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 83,
+    "name": "Mustela",
+    "description": null,
+    "path": "/brand/mustela"
+  },
+  {
+    "id": "7ce6b129-b3f6-4890-9ab8-43ce54462c8e",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 85,
+    "name": "Narta",
+    "description": null,
+    "path": "/brand/narta"
+  },
+  {
+    "id": "10bb9731-1966-4043-adb6-b87bd2aaa539",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 84,
+    "name": "Neutrogena",
+    "description": null,
+    "path": "/brand/neutrogena"
+  },
+  {
+    "id": "9ad81ffd-9e01-4ea0-81af-474ac3196821",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 86,
+    "name": "Nivea",
+    "description": null,
+    "path": "/brand/nivea"
+  },
+  {
+    "id": "d18241c0-0361-4158-baee-3f261d24a9f8",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 87,
+    "name": "Nobacter",
+    "description": null,
+    "path": "/brand/nobacter"
+  },
+  {
+    "id": "b74a1f9a-0da6-46a7-92a8-4268d55c4c5f",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 88,
+    "name": "Nyc",
+    "description": null,
+    "path": "/brand/nyc"
+  },
+  {
+    "id": "62118d8c-82ea-4c0c-b7e7-bf7b2eb1ca88",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 89,
+    "name": "Opi",
+    "description": null,
+    "path": "/brand/opi"
+  },
+  {
+    "id": "66c46122-270d-4ab6-acdd-f51fda6e1bb5",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 90,
+    "name": "Petits Plaisir",
+    "description": null,
+    "path": "/brand/petits-plaisir"
+  },
+  {
+    "id": "4aa826b3-cb38-41f3-8e50-75d76313a0ee",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 91,
+    "name": "Francoise Bedon",
+    "description": null,
+    "path": "/brand/francoise-bedon"
+  },
+  {
+    "id": "2fb268d9-22c8-4cdc-b5f7-f878e9a0b316",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 92,
+    "name": "Qei+ Paris",
+    "description": null,
+    "path": "/brand/qei-paris"
+  },
+  {
+    "id": "82e4fce9-3af6-4f55-baa7-8b7704460064",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 93,
+    "name": "Revlon",
+    "description": null,
+    "path": "/brand/revlon"
+  },
+  {
+    "id": "bf655cf7-39b3-4ff9-8d81-630243883233",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 94,
+    "name": "Rogé Cavaillès",
+    "description": null,
+    "path": "/brand/roge-cavailles"
+  },
+  {
+    "id": "4c0fe18a-d27a-4547-869e-49ff722c1ed9",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 95,
+    "name": "Roger Gallet",
+    "description": null,
+    "path": "/brand/roger-gallet"
+  },
+  {
+    "id": "5f3ea365-4481-459d-9f3d-c0103f8da763",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 96,
+    "name": "Topicrem",
+    "description": null,
+    "path": "/brand/topicrem"
+  },
+  {
+    "id": "d4edaad4-2fa2-43df-af45-60149d223e01",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 97,
+    "name": "Uriage",
+    "description": null,
+    "path": "/brand/uriage"
+  },
+  {
+    "id": "26f7fba1-fb53-4d0c-aefa-fc51422ea930",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 98,
+    "name": "Vegebom",
+    "description": null,
+    "path": "/brand/vegebom"
+  },
+  {
+    "id": "21188e64-5c82-4024-9cf1-8567dc128013",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 99,
+    "name": "Bikini Zone",
+    "description": null,
+    "path": "/brand/bikini-zone"
+  },
+  {
+    "id": "1967a1bc-a6ac-4d42-bb74-4ddbf07511a1",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 100,
+    "name": "Biolane",
+    "description": null,
+    "path": "/brand/biolane"
+  },
+  {
+    "id": "846eb95b-51d2-400b-9ad6-283538fdf50c",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 102,
+    "name": "Bledina",
+    "description": null,
+    "path": "/brand/bledina"
+  },
+  {
+    "id": "45f89cf9-f8c8-4415-9468-0c4870842458",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 104,
+    "name": "Klorane",
+    "description": null,
+    "path": null
+  },
+  {
+    "id": "b4c33055-c906-4659-98b9-125d568a405c",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 105,
+    "name": "Luxéol",
+    "description": null,
+    "path": "/brand/luxeol"
+  },
+  {
+    "id": "b520cf52-d44a-4905-9001-56c51a8c3f66",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 106,
+    "name": "Oe",
+    "description": null,
+    "path": "/brand/oe"
+  },
+  {
+    "id": "42c0ba36-eaca-4ce6-a103-119eb8e17e7e",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 107,
+    "name": "Homeopharma",
+    "description": null,
+    "path": "/brand/homeopharma"
+  },
+  {
+    "id": "a930641c-e44b-45ce-b92d-4ee7af5f5c6d",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 109,
+    "name": "Tampax",
+    "description": null,
+    "path": "/brand/tampax"
+  },
+  {
+    "id": "72d9e561-b9d9-4280-9839-0124c7504278",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 114,
+    "name": "Vichy",
+    "description": null,
+    "path": "/brand/vichy"
+  },
+  {
+    "id": "bc8f7132-902f-447a-8a4e-4c895a6b119b",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 115,
+    "name": "Saforelle",
+    "description": null,
+    "path": "/brand/saforelle"
+  },
+  {
+    "id": "219c55e7-ab07-4594-ad46-ae99c6f6ac43",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 116,
+    "name": "Gillette",
+    "description": null,
+    "path": "/brand/gillette"
+  },
+  {
+    "id": "dcc6ecc9-ef2e-4737-9e74-123d2d0c84f3",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 108,
+    "name": "Vaseline",
+    "description": null,
+    "path": "/brand/vaseline"
+  },
+  {
+    "id": "964fd25a-3ffb-4498-9d9c-b4bd4fd7cca2",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 111,
+    "name": "Cadum",
+    "description": null,
+    "path": "/brand/cadum"
+  },
+  {
+    "id": "37a34e55-85ee-431c-892d-202f2c992994",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 110,
+    "name": "Bio Oil",
+    "description": null,
+    "path": "/brand/bio-oil"
+  },
+  {
+    "id": "6109b66a-6f26-4326-852f-ba79bf1af6a9",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 113,
+    "name": "Pampers",
+    "description": null,
+    "path": "/brand/pampers"
+  },
+  {
+    "id": "b1c241fd-564e-45da-aeaa-8f54d4950b83",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 112,
+    "name": "Purity",
+    "description": null,
+    "path": "/brand/purity"
+  },
+  {
+    "id": "8f4695d3-f765-44e4-b41d-ecb6853e57e2",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 121,
+    "name": "Anaca 3",
+    "description": null,
+    "path": "/brand/anaca-3"
+  },
+  {
+    "id": "62f6ba43-4871-4390-876e-0ed850b6c814",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 161,
+    "name": "France Lait",
+    "description": null,
+    "path": "/brand/france-lait"
+  },
+  {
+    "id": "68daa0c4-712b-4f15-b836-f8912935de77",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 159,
+    "name": "Gallia",
+    "description": null,
+    "path": "/brand/gallia"
+  },
+  {
+    "id": "9652b00a-fee2-40a0-92da-a85a01f53ada",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 160,
+    "name": "Nursie",
+    "description": null,
+    "path": "/brand/nursie"
+  },
+  {
+    "id": "fb17212c-6a02-4952-9ecb-add3bbcd25cc",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 169,
+    "name": "Picot",
+    "description": null,
+    "path": "/brand/picot"
+  },
+  {
+    "id": "a6c6e549-fa19-48b7-a757-bc049ba7df10",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 176,
+    "name": "Nactalia",
+    "description": null,
+    "path": "/brand/nactalia"
+  },
+  {
+    "id": "07db3423-c616-4275-a687-134eabe049c0",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 183,
+    "name": "PUMA",
+    "description": null,
+    "path": "/brand/puma"
+  },
+  {
+    "id": "38a9d8bd-bb7e-40cd-8802-0f2960d3dd69",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 184,
+    "name": "PUMA Fragrance",
+    "description": null,
+    "path": "/brand/puma-fragrance"
+  },
+  {
+    "id": "c5529179-34c3-41b5-b2a7-ab25c4d43036",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 185,
+    "name": "PUMA Fragrance Run World",
+    "description": null,
+    "path": "/brand/puma-fragrance-run-world"
+  },
+  {
+    "id": "197cb35b-0d2c-4465-8101-32398d8028ad",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 186,
+    "name": "PUMA Fragrance Push Heat",
+    "description": null,
+    "path": "/brand/puma-fragrance-push-heat"
+  },
+  {
+    "id": "200bb991-6f09-4c23-a0d4-c6ffe2afdda4",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 187,
+    "name": "PUMA Fragrance Rock Beat",
+    "description": null,
+    "path": "/brand/puma-fragrance-rock-beat"
+  },
+  {
+    "id": "00bb3577-41f9-491f-8466-237f9045ae1b",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 188,
+    "name": "Narta Deo invisible",
+    "description": null,
+    "path": "/brand/narta-deo-invisible"
+  },
+  {
+    "id": "824a986d-0690-4a31-99bf-011497409bbf",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 189,
+    "name": "Narta Deo Bacti-Plus",
+    "description": null,
+    "path": "/brand/narta-deo-bacti-plus"
+  },
+  {
+    "id": "745be804-f801-4a38-974f-3ab06b8d95ff",
+    "type": "taxonomy_term--brand",
+    "drupal_id": 190,
+    "name": "Peau gommage",
+    "description": null,
+    "path": "/brand/peau-gommage"
+  }
+]
