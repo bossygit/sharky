@@ -65,7 +65,7 @@ jobs:
         run: |
           RSYNC_USER="$(echo "${{ secrets.SSH_USER || 'nasacdka' }}" | tr -d '[:space:]')"
           RSYNC_HOST="$(echo "${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}" | tr -d '[:space:]')"
-          rsync -az \
+          rsync -az -e "ssh -p 5022" \
             --exclude='.env' --exclude='.env.*' \
             --exclude='vendor' --exclude='node_modules' \
             --exclude='storage' --exclude='.git' --exclude='.github' \
@@ -76,7 +76,7 @@ jobs:
         run: |
           RSYNC_USER="$(echo "${{ secrets.SSH_USER || 'nasacdka' }}" | tr -d '[:space:]')"
           RSYNC_HOST="$(echo "${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}" | tr -d '[:space:]')"
-          ssh ${RSYNC_USER}@${RSYNC_HOST} <<'EOF'
+          ssh -p 5022 ${RSYNC_USER}@${RSYNC_HOST} <<'EOF'
             set -e
             cd /home/nasacdka/nasande-site
             # Dépendances (optimisées, sans dev)
