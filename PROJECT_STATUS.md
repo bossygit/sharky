@@ -81,9 +81,19 @@
 | Modules validated | 9/9 |
 
 ## 🚀 Next: Production Readiness
-- [ ] Fix Redis queue for enrichment
-- [ ] Real API keys (DeepSeek, Brave Search)
-- [ ] Staging deployment
-- [ ] CI/CD pipeline
-- [ ] Production security hardening
-- [ ] Real payment integration (Airtel Money, MTN MoMo)
+État au 2026-07-23 (voir aussi deploy/README.md) :
+- [x] **Harnais prod ciblé** : MySQL + queue "database" + cache "file" + Scout "database" (pas de Redis/Meili en prod)
+- [x] **.env.production.example** créé (clés API, DB, paiements, mail, sécu)
+- [x] **public/.htaccess hardening** : www→non-www (301), HTTP→HTTPS (301), HSTS, CSP, X-Frame-Options, cache, compression
+- [x] **Worker de queue** : deploy/supervisor-nasande-worker.conf + deploy/cron-worker.sh (corrige le bug « jobs non consommés »)
+- [x] **CI/CD** : .github/workflows/deploy.yml (Pint + PHPUnit + rsync + post-deploy migrate/cache/scout:import/queue:restart)
+- [x] **Runbook** : deploy/README.md
+- [ ] **Clés API réelles** à fournir (DeepSeek, Brave, Airtel Money, MTN MoMo) → à saisir dans .env serveur
+- [ ] **Staging** déployé et testé (tunnel achat + OTP + enrichissement)
+- [ ] **Paiements réels** activés (sandbox → live après validation opérateur)
+
+### Note sur l'ancien bug Redis d'enrichment
+Le `PROJECT_STATUS` initial citait un worker Redis qui ne consommait pas les jobs.
+En configuration PROD (QUEUE_CONNECTION=database), le souci n'est plus Redis mais
+**l'absence de worker `queue:work`** — résolu par deploy/supervisor-nasande-worker.conf
+(via Supervisor) ou deploy/cron-worker.sh (via cron sur mutualisé).
