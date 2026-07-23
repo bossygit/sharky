@@ -52,10 +52,14 @@ jobs:
       # Secrets GitHub requis : SSH_HOST, SSH_USER, SSH_KEY (privée), SSH_KNOWN_HOSTS, DEPLOY_PATH.
       # DEPLOY_PATH = /home/nasacdka/nasande-site
       - name: Install SSH key
-        uses: shimataro/setup-ssh@v2
-        with:
-          key: ${{ secrets.SSH_KEY }}
-          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          # known_hosts fourni par le secret (une ou plusieurs lignes)
+          echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
 
       - name: Rsync code (sans delete - preserve .env, vendor, storage, fichiers serveur)
         run: |
