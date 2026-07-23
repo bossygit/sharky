@@ -46,18 +46,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Build des assets Vite COTE CI (le serveur mutualisé n'a pas Node).
+      # Les fichiers public/build/ sont ensuite rsync vers le serveur.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build front assets
+        run: |
+          npm ci --no-audit --no-fund
+          npm run build
+
       # Déploiement par rsync SSH vers l'hébergement mutualisé Apache (Planethoster).
       # Sur le serveur : ~/nasande-site est la racine Laravel, et ~/public_html
       # est un symlink vers ~/nasande-site/public (DocumentRoot Apache de nasande.cg).
-      # Secrets GitHub requis : SSH_HOST, SSH_USER, SSH_KEY (privée), SSH_KNOWN_HOSTS, DEPLOY_PATH.
-      # DEPLOY_PATH = /home/nasacdka/nasande-site
+      # Secrets GitHub requis : SSH_HOST, SSH_USER, SSH_KEY (privée), SSH_KNOWN_HOSTS.
       - name: Install SSH key
         run: |
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
           echo "${{ secrets.SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          # known_hosts fourni par le secret (une ou plusieurs lignes)
           echo "${{ secrets.SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
@@ -72,7 +82,7 @@ jobs:
             --exclude='out' --exclude='tools' --exclude='public/storage' \
             ./ ${RSYNC_USER}@${RSYNC_HOST}:/home/nasacdka/nasande-site/
 
-      - name: Post-deploy (composer, assets, migrate, cache, search)
+      - name: Post-deploy (composer, migrate, cache, search)
         run: |
           RSYNC_USER="$(echo "${{ secrets.SSH_USER || 'nasacdka' }}" | tr -d '[:space:]')"
           RSYNC_HOST="$(echo "${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}" | tr -d '[:space:]')"
@@ -81,9 +91,6 @@ jobs:
             cd /home/nasacdka/nasande-site
             # Dépendances (optimisées, sans dev)
             composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader
-            # Assets front (Vite)
-            npm ci --no-audit --no-fund
-            npm run build
             # Laravel
             php artisan config:cache
             php artisan route:cache
