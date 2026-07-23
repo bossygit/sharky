@@ -63,16 +63,20 @@ jobs:
 
       - name: Rsync code (sans delete - preserve .env, vendor, storage, fichiers serveur)
         run: |
+          RSYNC_USER="${{ secrets.SSH_USER || 'nasacdka' }}"
+          RSYNC_HOST="${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}"
           rsync -az \
             --exclude='.env' --exclude='.env.*' \
             --exclude='vendor' --exclude='node_modules' \
             --exclude='storage' --exclude='.git' --exclude='.github' \
             --exclude='out' --exclude='tools' --exclude='public/storage' \
-            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/nasacdka/nasande-site/
+            ./ ${RSYNC_USER}@${RSYNC_HOST}:/home/nasacdka/nasande-site/
 
       - name: Post-deploy (composer, assets, migrate, cache, search)
         run: |
-          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} <<'EOF'
+          RSYNC_USER="${{ secrets.SSH_USER || 'nasacdka' }}"
+          RSYNC_HOST="${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}"
+          ssh ${RSYNC_USER}@${RSYNC_HOST} <<'EOF'
             set -e
             cd /home/nasacdka/nasande-site
             # Dépendances (optimisées, sans dev)
