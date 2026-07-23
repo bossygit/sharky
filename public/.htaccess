@@ -7,11 +7,19 @@
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP...on}]
 
     # Handle X-XSRF-Token Header
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # ── 1. www -> non-www (canonicalisation SEO, corrige le doublon) ──
+    RewriteCond %{HTTP_HOST} ^www\.nasande\.cg [NC]
+    RewriteRule ^ https://nasande.cg%{REQUEST_URI} [L,R=301]
+
+    # ── 2. HTTP -> HTTPS (HSTS repose dessus) ────────────────────────
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -22,4 +30,43 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+</IfModule>
+
+# ── 3. Security headers (absents lors de l'audit live) ─────────────────
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
+    Header always set X-Permitted-Cross-Domain-Policies "none"
+
+    # CSP : à valider en staging. htmx vient d'unpkg.com, Alpine injecte du style inline.
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'"
+
+    # Ne pas divulguer la techno / version
+    Header unset X-Powered-By
+    Header always unset Server
+</IfModule>
+
+# ── 4. Cache navigateur (assets versionnés par Laravel/Vite) ──────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp   "access plus 1 month"
+    ExpiresByType image/avif   "access plus 1 month"
+    ExpiresByType image/jpeg   "access plus 1 month"
+    ExpiresByType image/png    "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType font/woff2   "access plus 1 year"
+    ExpiresByType text/css     "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/json "access plus 1 day"
+</IfModule>
+
+# ── 5. Compression (brotli si dispo, sinon gzip) ─────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript application/json
 </IfModule>

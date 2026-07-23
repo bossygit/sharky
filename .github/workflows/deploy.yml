@@ -1,0 +1,92 @@
+name: CI / Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Lint + Tests (Pint + PHPUnit)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, intl, sqlite3, gd
+          coverage: none
+
+      - name: Cache composer
+        uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache
+          key: composer-${{ hashFiles('composer.lock') }}
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist --no-scripts
+
+      - name: Pint (code style)
+        run: ./vendor/bin/pint --test
+
+      - name: PHPUnit
+        env:
+          # phpunit.xml déjà en sqlite :memory: + queue sync + scout collection
+          APP_KEY: base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+        run: composer test
+
+  deploy:
+    name: Deploy to production
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Déploiement par rsync SSH vers l'hébergement mutualisé Apache (Planethoster).
+      # Sur le serveur : ~/nasande-site est la racine Laravel, et ~/public_html
+      # est un symlink vers ~/nasande-site/public (DocumentRoot Apache de nasande.cg).
+      # Secrets GitHub requis : SSH_HOST, SSH_USER, SSH_KEY (privée), SSH_KNOWN_HOSTS, DEPLOY_PATH.
+      # DEPLOY_PATH = /home/nasacdka/nasande-site
+      - name: Install SSH key
+        uses: shimataro/setup-ssh@v2
+        with:
+          key: ${{ secrets.SSH_KEY }}
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+
+      - name: Rsync code (sans delete - preserve .env, vendor, storage, fichiers serveur)
+        run: |
+          rsync -az \
+            --exclude='.env' --exclude='.env.*' \
+            --exclude='vendor' --exclude='node_modules' \
+            --exclude='storage' --exclude='.git' --exclude='.github' \
+            --exclude='out' --exclude='tools' --exclude='public/storage' \
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
+
+      - name: Post-deploy (composer, assets, migrate, cache, search)
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} <<'EOF'
+            set -e
+            cd ${{ secrets.DEPLOY_PATH }}
+            # Dépendances (optimisées, sans dev)
+            composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader
+            # Assets front (Vite)
+            npm ci --no-audit --no-fund
+            npm run build
+            # Laravel
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
+            php artisan storage:link
+            php artisan migrate --force
+            # Recherche : Scout driver "database" -> import synchrone du catalogue
+            php artisan scout:import --force "App\\Modules\\Catalog\\Domain\\Models\\Product" || true
+            # Worker de queue (enrichissement, commandes) : redémarrage propre
+            php artisan queue:restart || true
+            # Permissions
+            chmod -R 755 storage bootstrap/cache
+            echo "Deploy OK"
+          EOF
