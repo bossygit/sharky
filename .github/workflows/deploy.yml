@@ -63,8 +63,8 @@ jobs:
 
       - name: Rsync code (sans delete - preserve .env, vendor, storage, fichiers serveur)
         run: |
-          RSYNC_USER="${{ secrets.SSH_USER || 'nasacdka' }}"
-          RSYNC_HOST="${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}"
+          RSYNC_USER="$(echo "${{ secrets.SSH_USER || 'nasacdka' }}" | tr -d '[:space:]')"
+          RSYNC_HOST="$(echo "${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}" | tr -d '[:space:]')"
           rsync -az \
             --exclude='.env' --exclude='.env.*' \
             --exclude='vendor' --exclude='node_modules' \
@@ -74,8 +74,8 @@ jobs:
 
       - name: Post-deploy (composer, assets, migrate, cache, search)
         run: |
-          RSYNC_USER="${{ secrets.SSH_USER || 'nasacdka' }}"
-          RSYNC_HOST="${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}"
+          RSYNC_USER="$(echo "${{ secrets.SSH_USER || 'nasacdka' }}" | tr -d '[:space:]')"
+          RSYNC_HOST="$(echo "${{ secrets.SSH_HOST || 'world-366.fr.planethoster.net' }}" | tr -d '[:space:]')"
           ssh ${RSYNC_USER}@${RSYNC_HOST} <<'EOF'
             set -e
             cd /home/nasacdka/nasande-site
