@@ -62,21 +62,19 @@ jobs:
           chmod 644 ~/.ssh/known_hosts
 
       - name: Rsync code (sans delete - preserve .env, vendor, storage, fichiers serveur)
-        env:
-          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH || '/home/nasacdka/nasande-site' }}
         run: |
           rsync -az \
             --exclude='.env' --exclude='.env.*' \
             --exclude='vendor' --exclude='node_modules' \
             --exclude='storage' --exclude='.git' --exclude='.github' \
             --exclude='out' --exclude='tools' --exclude='public/storage' \
-            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${DEPLOY_PATH}/
+            ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/nasacdka/nasande-site/
 
       - name: Post-deploy (composer, assets, migrate, cache, search)
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} <<'EOF'
             set -e
-            cd ${{ secrets.DEPLOY_PATH }}
+            cd /home/nasacdka/nasande-site
             # Dépendances (optimisées, sans dev)
             composer install --no-interaction --prefer-dist --no-dev --optimize-autoloader
             # Assets front (Vite)
