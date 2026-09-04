@@ -115,6 +115,7 @@
         .search-wrap { flex:1; max-width:360px; position:relative; }
         .search-wrap input { width:100%; padding:.45rem .65rem; border:1px solid var(--c-border); border-radius:6px; }
         #search-suggest { position:absolute; top:100%; left:0; right:0; background:#fff; border:1px solid var(--c-border); border-radius:6px; box-shadow:var(--shadow-md); z-index:60; padding:.5rem .75rem; }
+        #search-suggest:empty { display: none; }
     </style>
 
     <script src="https://unpkg.com/htmx.org@2.0.4" defer></script>

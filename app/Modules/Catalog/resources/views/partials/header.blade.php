@@ -9,7 +9,7 @@
                 <label for="header-search" class="sr-only">Rechercher</label>
                 <input id="header-search" name="q" type="search" placeholder="Rechercher…" autocomplete="off"
                        hx-get="{{ route('search.suggest') }}"
-                       hx-trigger="keyup changed delay:150ms, search"
+                       hx-trigger="keyup[this.value.trim().length>=2] changed delay:150ms, keyup[this.value.trim().length<2] delay:150ms, search"
                        hx-target="#search-suggest"
                        hx-swap="innerHTML">
             </form>

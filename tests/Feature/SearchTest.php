@@ -44,4 +44,24 @@ class SearchTest extends TestCase
 
         $this->assertSame(0, SearchLog::first()->hits_count);
     }
+
+    public function test_suggest_returns_empty_200_when_query_is_too_short(): void
+    {
+        $this->get(route('search.suggest', ['q' => '']))
+            ->assertOk()
+            ->assertSee('', false);
+
+        $this->get(route('search.suggest', ['q' => 'a']))
+            ->assertOk()
+            ->assertSee('', false);
+    }
+
+    public function test_header_hides_empty_search_suggest(): void
+    {
+        $this->get(route('home'))
+            ->assertOk()
+            ->assertSee('id="search-suggest"', false)
+            ->assertSee('#search-suggest:empty', false)
+            ->assertSee('this.value.trim().length>=2', false);
+    }
 }

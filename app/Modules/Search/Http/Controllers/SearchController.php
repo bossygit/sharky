@@ -45,7 +45,7 @@ class SearchController extends Controller
     {
         $q = trim((string) $request->query('q', ''));
         if (strlen($q) < 2) {
-            return response('', 204);
+            return response('', 200);
         }
 
         $products = $this->search->search($q, 5);
