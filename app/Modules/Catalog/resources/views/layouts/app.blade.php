@@ -75,7 +75,7 @@
         .skip-link:focus { left: 1rem; top: 1rem; background: #fff; padding: .5rem 1rem; z-index: 100; box-shadow: var(--shadow-md); }
 
         /* Header */
-        .site-header { border-bottom: 1px solid var(--c-border); background: #fff; position: sticky; top: 0; z-index: 50; }
+        .site-header { border-bottom: 1px solid var(--c-border); background-color: #ffffff; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 8px rgba(0,0,0,.08), 0 1px 3px rgba(0,0,0,.06); }
         .site-header .bar { display: flex; align-items: center; justify-content: space-between; padding: .75rem 0; gap: 1rem; }
         .brand { font-weight: 700; font-size: 1.25rem; color: var(--c-primary); }
         .main-nav { display: flex; gap: 1rem; flex-wrap: wrap; }

@@ -15,6 +15,9 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->alias([
             'admin' => \App\Http\Middleware\EnsureAdmin::class,
         ]);
+        $middleware->validateCsrfTokens(except: [
+            'webhooks/payments/*',
+        ]);
         $middleware->redirectGuestsTo('/admin/login');
         $middleware->web(append: [
             \App\Http\Middleware\TrackingMiddleware::class,

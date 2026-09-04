@@ -6,7 +6,8 @@
 <article class="product-card" itemscope itemtype="https://schema.org/Product">
     <a href="{{ $product->canonical_path }}" class="thumb" aria-label="{{ $product->title }}">
         @if ($img)
-            <img src="{{ $img->url }}" alt="{{ $img->alt_text ?: $product->title }}"
+            <img src="{{ $img->url }}" srcset="{{ $img->srcset() }}" sizes="{{ $img->sizes('card') }}"
+                 alt="{{ $img->alt_text ?: $product->title }}"
                  loading="lazy" decoding="async" itemprop="image"
                  width="{{ $img->width ?: 320 }}" height="{{ $img->height ?: 320 }}">
         @else

@@ -53,8 +53,11 @@ class MtnMomoProvider implements PaymentProvider
 
     public function handleWebhook(Request $request): array
     {
-        $secret = config('commerce.payments.mtn_momo.webhook_secret');
-        if ($secret && $request->header('X-Mtn-Signature') !== hash_hmac('sha256', $request->getContent(), $secret)) {
+        $secret = (string) config('commerce.payments.mtn_momo.webhook_secret');
+        if ($secret === '') {
+            return ['handled' => false, 'status' => null, 'message' => 'Secret webhook manquant'];
+        }
+        if ($request->header('X-Mtn-Signature') !== hash_hmac('sha256', $request->getContent(), $secret)) {
             return ['handled' => false, 'status' => null, 'message' => 'Signature invalide'];
         }
 

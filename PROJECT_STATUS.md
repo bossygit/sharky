@@ -57,7 +57,7 @@
 - Bug found: Redis queue worker not consuming enrichment jobs (workaround: direct orchestrator call)
 
 ### Admin ✅
-- Login: Working (admin@nasande.cg / admin12345)
+- Login: Working (ne pas documenter le mot de passe)
 - Dashboard: Renders correctly
 - Product CRUD: Accessible
 - Full sidebar navigation: Products, Brands, Categories, Orders, Commerce Settings, Search Synonyms, Demand Clusters, Enrichment Review

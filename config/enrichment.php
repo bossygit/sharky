@@ -15,34 +15,24 @@ return [
     |
     */
 
-    'provider' => env('LLM_PROVIDER', 'deepseek'),
+    'llm' => [
+        'provider' => env('LLM_PROVIDER', 'deepseek'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | DeepSeek
-    |--------------------------------------------------------------------------
-    */
+        'deepseek' => [
+            'api_key' => env('DEEPSEEK_API_KEY'),
+            'base_url' => env('DEEPSEEK_BASE_URL', 'https://api.deepseek.com/v1'),
+            'model' => env('DEEPSEEK_MODEL_CHAT', 'deepseek-chat'),
+            'timeout' => (int) env('DEEPSEEK_TIMEOUT', 60),
+            'max_retries' => (int) env('DEEPSEEK_MAX_RETRIES', 5),
+        ],
 
-    'deepseek' => [
-        'api_key' => env('DEEPSEEK_API_KEY'),
-        'base_url' => env('DEEPSEEK_BASE_URL', 'https://api.deepseek.com/v1'),
-        'model' => env('DEEPSEEK_MODEL_CHAT', 'deepseek-chat'),
-        'timeout' => (int) env('DEEPSEEK_TIMEOUT', 60),
-        'max_retries' => (int) env('DEEPSEEK_MAX_RETRIES', 5),
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | NVIDIA
-    |--------------------------------------------------------------------------
-    */
-
-    'nvidia' => [
-        'api_key' => env('NVIDIA_API_KEY'),
-        'base_url' => env('NVIDIA_BASE_URL', 'https://integrate.api.nvidia.com/v1'),
-        'model' => env('NVIDIA_MODEL_CHAT', 'google/gemma-4-31b-it'),
-        'timeout' => (int) env('NVIDIA_TIMEOUT', 60),
-        'max_retries' => (int) env('NVIDIA_MAX_RETRIES', 5),
+        'nvidia' => [
+            'api_key' => env('NVIDIA_API_KEY'),
+            'base_url' => env('NVIDIA_BASE_URL', 'https://integrate.api.nvidia.com/v1'),
+            'model' => env('NVIDIA_MODEL_CHAT', 'google/gemma-4-31b-it'),
+            'timeout' => (int) env('NVIDIA_TIMEOUT', 60),
+            'max_retries' => (int) env('NVIDIA_MAX_RETRIES', 5),
+        ],
     ],
 
     /*

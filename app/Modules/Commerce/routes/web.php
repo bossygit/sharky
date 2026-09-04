@@ -14,7 +14,7 @@ Route::patch('/panier/{variantId}', [CartController::class, 'update'])->name('ca
 Route::delete('/panier/{variantId}', [CartController::class, 'remove'])->name('cart.remove');
 
 Route::get('/checkout', [CheckoutController::class, 'show'])->name('checkout.show');
-Route::post('/checkout/otp', [CheckoutController::class, 'sendOtp'])->name('checkout.otp');
+Route::post('/checkout/otp', [CheckoutController::class, 'sendOtp'])->middleware('throttle:5,1')->name('checkout.otp');
 Route::post('/checkout', [CheckoutController::class, 'store'])->name('checkout.store');
 
 Route::get('/commande/{uuid}', [OrderController::class, 'show'])->name('order.show');

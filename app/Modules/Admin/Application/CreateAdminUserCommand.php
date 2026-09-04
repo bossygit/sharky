@@ -13,7 +13,7 @@ class CreateAdminUserCommand extends Command
     protected $signature = 'admin:create-user
         {--email=admin@nasande.cg : Email admin}
         {--name=Administrateur : Nom}
-        {--password= : Mot de passe (sinon admin12345)}';
+        {--password= : Mot de passe (obligatoire)}';
 
     protected $description = 'Crée ou met à jour un compte administrateur';
 
@@ -21,7 +21,12 @@ class CreateAdminUserCommand extends Command
     {
         $email = (string) $this->option('email');
         $name = (string) $this->option('name');
-        $password = (string) ($this->option('password') ?: 'admin12345');
+        $password = (string) $this->option('password');
+        if ($password === '') {
+            $this->error('Option --password obligatoire (pas de mot de passe par défaut).');
+
+            return self::FAILURE;
+        }
 
         $user = User::updateOrCreate(
             ['email' => $email],
@@ -34,9 +39,6 @@ class CreateAdminUserCommand extends Command
         );
 
         $this->info("Admin prêt : {$user->email} (role: {$user->role})");
-        if (! $this->option('password')) {
-            $this->warn('Mot de passe par défaut : admin12345 — change-le en production.');
-        }
 
         return self::SUCCESS;
     }
