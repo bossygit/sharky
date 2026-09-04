@@ -7,10 +7,8 @@ namespace Tests\Feature;
 use App\Modules\Catalog\Domain\Models\Product;
 use App\Modules\Catalog\Domain\Models\Variant;
 use App\Modules\Commerce\Application\CartService;
-use App\Modules\Commerce\Domain\Models\CustomerOtp;
 use App\Modules\Commerce\Domain\Models\Order;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 use Tests\TestCase;
@@ -48,16 +46,9 @@ class CommerceCheckoutTest extends TestCase
             'quantity' => 2,
         ])->assertRedirect(route('cart.show'));
 
-        CustomerOtp::create([
-            'email' => 'client@test.cg',
-            'code_hash' => Hash::make('123456'),
-            'expires_at' => now()->addMinutes(10),
-        ]);
-
         $response = $this->post(route('checkout.store'), [
             'customer_name' => 'Jean Test',
             'customer_email' => 'client@test.cg',
-            'otp_code' => '123456',
             'customer_phone' => '+242061234567',
             'delivery_address_text' => 'Poto-Poto, Brazzaville',
             'payment_method' => 'cash_on_delivery',

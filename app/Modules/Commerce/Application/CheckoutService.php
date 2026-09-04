@@ -10,6 +10,7 @@ use App\Modules\Commerce\Domain\Models\Order;
 use App\Modules\Commerce\Domain\Models\OrderItem;
 use App\Modules\Commerce\Domain\Models\OrderPayment;
 use App\Modules\Commerce\Infrastructure\Payments\PaymentManager;
+use App\Modules\Commerce\Mail\NewOrderAdminMail;
 use App\Modules\Commerce\Mail\OrderConfirmationMail;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
@@ -99,7 +100,18 @@ class CheckoutService
 
             $this->cart->clear();
 
-            Mail::to($order->customer_email)->send(new OrderConfirmationMail($order->fresh(['items'])));
+            $fresh = $order->fresh(['items']);
+            Mail::to($order->customer_email)->send(new OrderConfirmationMail($fresh));
+
+            $adminEmails = User::query()
+                ->whereIn('role', ['admin', 'catalog-editor'])
+                ->pluck('email')
+                ->filter()
+                ->all();
+
+            if ($adminEmails !== []) {
+                Mail::to($adminEmails)->send(new NewOrderAdminMail($fresh));
+            }
 
             return $order->fresh(['items', 'payments']);
         });

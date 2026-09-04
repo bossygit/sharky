@@ -104,7 +104,27 @@
         .breadcrumb li:not(:last-child)::after { content: " ›"; color: var(--c-muted); margin-left: .25rem; }
 
         /* Footer */
-        .site-footer { border-top: 1px solid var(--c-border); margin-top: 4rem; padding: 2rem 0; color: var(--c-muted); font-size: .9rem; background: #fafafa; }
+        .site-footer { border-top: 1px solid var(--c-border); margin-top: 4rem; padding: 2.25rem 0 1.5rem; color: var(--c-muted); font-size: .9rem; background: #f4f1ea; }
+        .footer-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+        @media (min-width: 720px) { .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; } }
+        .footer-brand { font-weight: 700; font-size: 1.15rem; color: var(--c-primary); margin: 0 0 .35rem; }
+        .footer-brand span { color: var(--c-accent); }
+        .footer-heading { margin: 0 0 .5rem; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--c-primary); }
+        .site-footer ul { list-style: none; padding: 0; margin: 0; }
+        .site-footer li { margin: .3rem 0; }
+        .footer-meta { margin-top: 1.75rem; padding-top: 1rem; border-top: 1px solid var(--c-border); }
+        .nav-wa { color: #0f6b4c !important; font-weight: 600; }
+        .btn-whatsapp { display: inline-block; padding: .65rem 1rem; background: #0f6b4c; color: #fff !important; border-radius: 8px; font-weight: 600; }
+        .btn-whatsapp:hover { text-decoration: none; filter: brightness(1.08); }
+        .legal-page { padding: 2.25rem 0 3rem; max-width: 42rem; }
+        .legal-page h2 { margin-top: 1.75rem; }
+        .contact-card { list-style: none; padding: 0; margin: 1.5rem 0 0; border: 1px solid var(--c-border); border-radius: 10px; }
+        .contact-card li { display: grid; gap: .15rem; padding: .9rem 1rem; border-bottom: 1px solid var(--c-border); }
+        .contact-card li:last-child { border-bottom: 0; }
+        .contact-card span { font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; color: var(--c-muted); }
+        .checkout-form label { display: block; font-weight: 600; margin: .85rem 0 .3rem; }
+        .checkout-form input, .checkout-form textarea { width: 100%; padding: .55rem .65rem; border: 1px solid var(--c-border); border-radius: 6px; font: inherit; }
+        .checkout-help { margin: .75rem 0 0; }
 
         /* Pagination */
         .pagination { display: flex; gap: .25rem; justify-content: center; padding: 2rem 0; flex-wrap: wrap; }

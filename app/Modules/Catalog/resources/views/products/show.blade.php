@@ -112,6 +112,17 @@
                 @endif
             @endif
 
+            @php
+                $contact = \App\Modules\Commerce\Application\StorefrontContact::current();
+            @endphp
+            @if ($contact->hasWhatsapp())
+                <p style="margin-top:1.25rem;">
+                    <a class="btn-whatsapp" href="{{ $contact->whatsappHref('Bonjour, je souhaite des infos sur : '.$product->title.' '.url($product->canonical_path)) }}">
+                        Commander ou poser une question sur WhatsApp
+                    </a>
+                </p>
+            @endif
+
             @if ($product->description_html)
                 <section style="margin-top: 2rem;">
                     <h2>Description</h2>

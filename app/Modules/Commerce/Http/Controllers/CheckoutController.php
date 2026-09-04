@@ -6,7 +6,8 @@ namespace App\Modules\Commerce\Http\Controllers;
 
 use App\Modules\Commerce\Application\CartService;
 use App\Modules\Commerce\Application\CheckoutService;
-use App\Modules\Commerce\Application\CustomerOtpService;
+use App\Modules\Commerce\Application\CustomerIdentityService;
+use App\Modules\Commerce\Application\StorefrontContact;
 use App\Modules\Commerce\Infrastructure\Payments\PaymentManager;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
@@ -19,7 +20,7 @@ class CheckoutController extends Controller
     public function __construct(
         private CartService $cart,
         private CheckoutService $checkout,
-        private CustomerOtpService $otp,
+        private CustomerIdentityService $customers,
         private PaymentManager $payments,
     ) {}
 
@@ -35,15 +36,8 @@ class CheckoutController extends Controller
             'total' => $this->checkout->totalMinor(),
             'paymentMethods' => $this->payments->enabled(),
             'deliveryCity' => config('commerce.delivery.city', 'Brazzaville'),
+            'contact' => StorefrontContact::current(),
         ]);
-    }
-
-    public function sendOtp(Request $request): RedirectResponse
-    {
-        $data = $request->validate(['email' => ['required', 'email']]);
-        $this->otp->send($data['email']);
-
-        return back()->with('success', 'Code envoyé à '.$data['email'].'.');
     }
 
     public function store(Request $request): RedirectResponse
@@ -55,7 +49,6 @@ class CheckoutController extends Controller
         $data = $request->validate([
             'customer_name' => ['required', 'string', 'max:255'],
             'customer_email' => ['required', 'email'],
-            'otp_code' => ['required', 'string', 'size:'.config('commerce.otp.length', 6)],
             'customer_phone' => ['required', 'string', 'max:32'],
             'delivery_address_text' => ['required', 'string', 'max:2000'],
             'payment_method' => ['required', 'in:cash_on_delivery,airtel_money,mtn_momo'],
@@ -63,7 +56,7 @@ class CheckoutController extends Controller
         ]);
 
         try {
-            $customer = $this->otp->verify($data['customer_email'], $data['otp_code']);
+            $customer = $this->customers->findOrCreate($data['customer_email'], $data['customer_name']);
             Auth::login($customer);
 
             $order = $this->checkout->placeOrder($customer, $data);

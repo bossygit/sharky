@@ -18,6 +18,10 @@ class SeoController extends Controller
 
         $urls[] = ['loc' => url('/'), 'changefreq' => 'daily', 'priority' => '1.0'];
 
+        foreach (['/contact', '/a-propos', '/cgv', '/retours'] as $path) {
+            $urls[] = ['loc' => url($path), 'changefreq' => 'monthly', 'priority' => '0.4'];
+        }
+
         Product::query()
             ->where('status', 'published')
             ->whereNotNull('canonical_path')
@@ -72,6 +76,7 @@ class SeoController extends Controller
     public function robots(): Response
     {
         $body = "User-agent: *\nAllow: /\n\nSitemap: ".url('/sitemap.xml')."\n";
+
         return response($body, 200, ['Content-Type' => 'text/plain']);
     }
 
@@ -89,7 +94,7 @@ class SeoController extends Controller
         $body .= "> Boutique en ligne de parapharmacie, cosmétique et soin à Brazzaville (République du Congo).\n\n";
         $body .= "## À propos\n\n";
         $body .= "nasande.cg est une boutique en ligne basée à Brazzaville proposant {$productCount} produits ";
-        $body .= "de parapharmacie, cosmétique, soin, hygiène, maternité et bébé. ";
+        $body .= 'de parapharmacie, cosmétique, soin, hygiène, maternité et bébé. ';
         $body .= "Catalogue de {$brandCount} marques et {$categoryCount} catégories.\n\n";
         $body .= "## Livraison et paiement\n\n";
         $body .= "- Livraison : Brazzaville uniquement.\n";
@@ -100,6 +105,9 @@ class SeoController extends Controller
         $body .= '- [Plan du site](sitemap.xml) — liste complète des URLs canoniques.'."\n";
         $body .= "- Les pages produit utilisent JSON-LD schema.org/Product.\n";
         $body .= "- Les pages utilisent un balisage sémantique HTML5 (article, nav, breadcrumb).\n";
+        $body .= '- [À propos]('.url('/a-propos').") — boutique, livraison Brazzaville, paiement.\n";
+        $body .= '- [Contact]('.url('/contact').") — téléphone et WhatsApp.\n";
+        $body .= '- [CGV]('.url('/cgv').') et [retours]('.url('/retours').").\n";
 
         return response($body, 200, ['Content-Type' => 'text/plain; charset=utf-8']);
     }

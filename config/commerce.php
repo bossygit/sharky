@@ -22,13 +22,13 @@ return [
         ],
         'airtel_money' => [
             'enabled' => env('AIRTEL_MONEY_ENABLED', true),
-            'label' => 'Airtel Money',
+            'label' => 'Airtel Money (instructions USSD)',
             'merchant_code' => env('AIRTEL_MONEY_MERCHANT_CODE'),
             'webhook_secret' => env('AIRTEL_MONEY_WEBHOOK_SECRET'),
         ],
         'mtn_momo' => [
             'enabled' => env('MTN_MOMO_ENABLED', true),
-            'label' => 'MTN Mobile Money',
+            'label' => 'MTN Mobile Money (instructions USSD)',
             'subscription_key' => env('MTN_MOMO_SUBSCRIPTION_KEY'),
             'webhook_secret' => env('MTN_MOMO_WEBHOOK_SECRET'),
         ],

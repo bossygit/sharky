@@ -9,7 +9,6 @@ use App\Modules\Commerce\Domain\Models\Order;
 use App\Modules\Commerce\Domain\Models\OrderPayment;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class SecurityHardeningTest extends TestCase
@@ -95,19 +94,6 @@ class SecurityHardeningTest extends TestCase
         $this->assertSame('paid', $order->fresh()->payment_status);
     }
 
-    public function test_otp_flash_does_not_mention_mailpit(): void
-    {
-        Mail::fake();
-
-        $this->from('/checkout')
-            ->post(route('checkout.otp'), ['email' => 'client@test.cg'])
-            ->assertRedirect();
-
-        $message = session('success', '');
-        $this->assertStringNotContainsStringIgnoringCase('mailpit', (string) $message);
-        $this->assertStringContainsString('client@test.cg', (string) $message);
-    }
-
     public function test_admin_login_is_rate_limited(): void
     {
         User::factory()->create([
@@ -129,20 +115,6 @@ class SecurityHardeningTest extends TestCase
                 'email' => 'admin@nasande.cg',
                 'password' => 'wrong-password',
             ])
-            ->assertStatus(429);
-    }
-
-    public function test_checkout_otp_is_rate_limited(): void
-    {
-        Mail::fake();
-
-        for ($i = 0; $i < 5; $i++) {
-            $this->from('/checkout')
-                ->post(route('checkout.otp'), ['email' => 'client@test.cg']);
-        }
-
-        $this->from('/checkout')
-            ->post(route('checkout.otp'), ['email' => 'client@test.cg'])
             ->assertStatus(429);
     }
 

@@ -7,6 +7,18 @@
     <h1>Finaliser la commande</h1>
     <p class="muted">Livraison à {{ $deliveryCity }} uniquement.</p>
 
+    @if ($contact->hasWhatsapp() || $contact->hasPhone())
+        <p class="checkout-help">
+            Une question avant de valider ?
+            @if ($contact->hasWhatsapp())
+                <a href="{{ $contact->whatsappHref('Bonjour, j\'ai une question sur ma commande en cours sur nasande.cg.') }}">WhatsApp</a>
+            @endif
+            @if ($contact->hasPhone())
+                · <a href="{{ $contact->telHref() }}">Appeler</a>
+            @endif
+        </p>
+    @endif
+
     @if (session('error'))
         <p style="color:var(--c-danger);">{{ session('error') }}</p>
     @endif
@@ -19,19 +31,13 @@
         <p class="muted">Dont livraison {{ number_format($shipping, 0, ',', ' ') }} XAF</p>
     </div>
 
-    <form method="POST" action="{{ route('checkout.store') }}">
+    <form method="POST" action="{{ route('checkout.store') }}" class="checkout-form">
         @csrf
         <label for="customer_name">Nom complet *</label>
         <input id="customer_name" name="customer_name" value="{{ old('customer_name') }}" required>
 
         <label for="customer_email">Email *</label>
         <input id="customer_email" name="customer_email" type="email" value="{{ old('customer_email') }}" required>
-
-        <p class="muted" style="margin:.5rem 0 1rem;">Un code de vérification sera envoyé à votre email.</p>
-        <button formaction="{{ route('checkout.otp') }}" formmethod="POST" type="submit" class="btn" style="margin-bottom:1rem;">Envoyer le code OTP</button>
-
-        <label for="otp_code">Code OTP *</label>
-        <input id="otp_code" name="otp_code" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required>
 
         <label for="customer_phone">Téléphone (Mobile Money) *</label>
         <input id="customer_phone" name="customer_phone" value="{{ old('customer_phone') }}" required placeholder="+242 06 XXX XX XX">

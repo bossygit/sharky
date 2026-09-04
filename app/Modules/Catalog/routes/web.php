@@ -7,6 +7,7 @@ use App\Modules\Catalog\Http\Controllers\CategoryController;
 use App\Modules\Catalog\Http\Controllers\HomeController;
 use App\Modules\Catalog\Http\Controllers\LegacyProductController;
 use App\Modules\Catalog\Http\Controllers\NewProductController;
+use App\Modules\Catalog\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,6 +29,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', HomeController::class)->name('home');
+
+Route::get('/contact', [PageController::class, 'contact'])->name('pages.contact');
+Route::get('/a-propos', [PageController::class, 'about'])->name('pages.about');
+Route::get('/cgv', [PageController::class, 'terms'])->name('pages.terms');
+Route::get('/retours', [PageController::class, 'returns'])->name('pages.returns');
 
 Route::get('/produits/{slug}', [NewProductController::class, 'show'])
     ->where('slug', '[a-z0-9][a-z0-9-]*')
