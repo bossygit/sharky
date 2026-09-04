@@ -15,7 +15,7 @@ class NvidiaClient implements LLMClient
 {
     public function complete(LLMRequest $request): LLMResponse
     {
-        $apiKey = config('enrichment.nvidia.api_key');
+        $apiKey = config('enrichment.llm.nvidia.api_key');
 
         if (! $apiKey) {
             throw new RuntimeException('NVIDIA_API_KEY manquante.');

@@ -43,7 +43,7 @@ class CheckoutController extends Controller
         $data = $request->validate(['email' => ['required', 'email']]);
         $this->otp->send($data['email']);
 
-        return back()->with('success', 'Code envoyé à '.$data['email'].' (vérifiez Mailpit en local).');
+        return back()->with('success', 'Code envoyé à '.$data['email'].'.');
     }
 
     public function store(Request $request): RedirectResponse

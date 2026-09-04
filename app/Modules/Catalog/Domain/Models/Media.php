@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Modules\Catalog\Domain\Models;
 
+use App\Modules\Catalog\Application\ImageVariantService;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -71,5 +72,34 @@ class Media extends Model
         }
 
         return Storage::disk($this->disk)->url($this->path);
+    }
+
+    public function srcset(): ?string
+    {
+        if (! $this->is_available || $this->url === null) {
+            return null;
+        }
+
+        $parts = [];
+        if ($this->disk === 'public' && $this->path) {
+            $service = app(ImageVariantService::class);
+            foreach (ImageVariantService::WIDTHS as $width) {
+                $variant = $service->variantRelativePath($this->path, $width);
+                if (Storage::disk('public')->exists($variant)) {
+                    $parts[] = '/storage/'.ltrim($variant, '/').' '.$width.'w';
+                }
+            }
+        }
+
+        $parts[] = $this->url.' '.($this->width ?: 1600).'w';
+
+        return implode(', ', $parts);
+    }
+
+    public function sizes(string $context = 'card'): string
+    {
+        return $context === 'detail'
+            ? '(max-width: 768px) 100vw, 50vw'
+            : '(max-width: 640px) 50vw, 220px';
     }
 }

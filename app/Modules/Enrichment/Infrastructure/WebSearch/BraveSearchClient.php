@@ -27,7 +27,7 @@ class BraveSearchClient implements WebSearchClient
                 'q' => $query,
                 'count' => min($limit, 10),
                 'search_lang' => 'fr',
-                'country' => 'CG',
+                'country' => 'FR',
             ])
             ->throw();
 

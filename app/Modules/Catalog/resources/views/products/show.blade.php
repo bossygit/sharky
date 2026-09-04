@@ -46,6 +46,8 @@
         <div class="product-gallery">
             @if ($primaryImage)
                 <img src="{{ $primaryImage->url }}"
+                     srcset="{{ $primaryImage->srcset() }}"
+                     sizes="{{ $primaryImage->sizes('detail') }}"
                      alt="{{ $primaryImage->alt_text ?: $product->title }}"
                      width="{{ $primaryImage->width ?: 600 }}"
                      height="{{ $primaryImage->height ?: 600 }}"
@@ -54,7 +56,8 @@
             @if ($images->count() > 1)
                 <div class="thumbs" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; margin-top: .5rem;">
                     @foreach ($images->take(8) as $img)
-                        <img src="{{ $img->url }}" alt="{{ $img->alt_text ?: $product->title }}"
+                        <img src="{{ $img->url }}" srcset="{{ $img->srcset() }}" sizes="120px"
+                             alt="{{ $img->alt_text ?: $product->title }}"
                              loading="lazy" decoding="async"
                              style="aspect-ratio: 1; object-fit: contain; background: #fafafa; border: 1px solid var(--c-border); border-radius: var(--r-sm); padding: .25rem;">
                     @endforeach
