@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Coffrets cadeaux">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#171a12"/><stop offset="1" stop-color="#2e3524"/></linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3c2318"/><stop offset="1" stop-color="#22130d"/></linearGradient>
+  </defs>
+  <rect width="1400" height="800" fill="url(#bg)"/>
+  <g fill="none" stroke="#b08d57" stroke-opacity=".35"><path d="M 380 640 L 380 300 L 1020 300 L 1020 640"/><path d="M 360 640 L 1040 640"/></g>
+  <g transform="translate(700,470)">
+    <ellipse cx="0" cy="190" rx="240" ry="22" fill="#000" opacity=".25"/>
+    <rect x="-210" y="-30" width="420" height="220" fill="url(#box)"/>
+    <rect x="-228" y="-58" width="456" height="46" fill="#4a2a1b"/>
+    <rect x="-32" y="-58" width="64" height="248" fill="#b08d57" opacity=".85"/>
+    <rect x="-210" y="76" width="420" height="4" fill="#b08d57" opacity=".45"/>
+    <path d="M 0 -58 C -90 -150, -190 -110, -110 -50 C -70 -22, -20 -40, 0 -58 C 20 -40, 70 -22, 110 -50 C 190 -110, 90 -150, 0 -58 Z" fill="#b08d57" opacity=".9"/>
+  </g>
+  <g opacity=".9">
+<g transform="translate(280,90) scale(1.0) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="128" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gruinartblancdeblancs" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#181f14"/>
+      <stop offset=".22" stop-color="#232e1e"/>
+      <stop offset=".38" stop-color="#44593a"/>
+      <stop offset=".55" stop-color="#2c3a26"/>
+      <stop offset=".85" stop-color="#1f291b"/>
+      <stop offset="1" stop-color="#161d13"/>
+    </linearGradient>
+    <linearGradient id="vruinartblancdeblancs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 191.0 732.0 L 191.0 438.0 C 191.0 400.6, 244.0 371.8, 253.0 366.0 L 253.0 188.0 L 307.0 188.0 L 307.0 366.0 C 316.0 371.8, 369.0 400.6, 369.0 438.0 L 369.0 732.0 Q 280.0 742.0 191.0 732.0 Z" fill="url(#gruinartblancdeblancs)"/>
+  <path d="M 191.0 732.0 L 191.0 438.0 C 191.0 400.6, 244.0 371.8, 253.0 366.0 L 253.0 188.0 L 307.0 188.0 L 307.0 366.0 C 316.0 371.8, 369.0 400.6, 369.0 438.0 L 369.0 732.0 Q 280.0 742.0 191.0 732.0 Z" fill="url(#vruinartblancdeblancs)"/>
+  <path d="M 227 448 L 227 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="271.0" y="136" width="58" height="60.0"
+        fill="#a8844f" rx="2"/>
+  <rect x="271.0" y="152" width="58" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f3e9d4" stroke="#a8844f" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#a8844f" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#a8844f">RUINART</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#221a12">Blanc de Blancs</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#a8844f" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#221a12" opacity=".85">NV · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#221a12" opacity=".6">CHAMPAGNE AOC</text>
+</g></g>
+</svg>

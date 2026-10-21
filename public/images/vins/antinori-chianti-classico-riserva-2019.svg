@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Marchesi Antinori Chianti Classico Riserva">
+
+<g transform="translate(300,0.0) scale(1.0) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="112" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gantinorichianticlassicoriserva2019" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#121a11"/>
+      <stop offset=".22" stop-color="#1a2618"/>
+      <stop offset=".38" stop-color="#334a30"/>
+      <stop offset=".55" stop-color="#21301f"/>
+      <stop offset=".85" stop-color="#172216"/>
+      <stop offset="1" stop-color="#10180f"/>
+    </linearGradient>
+    <linearGradient id="vantinorichianticlassicoriserva2019" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 222.0 734.0 L 222.0 410.0 C 222.0 362.2, 268.0 325.4, 277.0 318.0 L 277.0 196.0 L 323.0 196.0 L 323.0 318.0 C 332.0 325.4, 378.0 362.2, 378.0 410.0 L 378.0 734.0 Q 300.0 744.0 222.0 734.0 Z" fill="url(#gantinorichianticlassicoriserva2019)"/>
+  <path d="M 222.0 734.0 L 222.0 410.0 C 222.0 362.2, 268.0 325.4, 277.0 318.0 L 277.0 196.0 L 323.0 196.0 L 323.0 318.0 C 332.0 325.4, 378.0 362.2, 378.0 410.0 L 378.0 734.0 Q 300.0 744.0 222.0 734.0 Z" fill="url(#vantinorichianticlassicoriserva2019)"/>
+  <path d="M 238 420 L 238 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="275.0" y="144" width="50" height="60.0"
+        fill="#8f2d27" rx="2"/>
+  <rect x="275.0" y="160" width="50" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f1e6ce" stroke="#8f2d27" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#8f2d27" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#8f2d27">MARCHESI ANTINORI</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241a12">Chianti Classico</text>
+<text x="300" y="573" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241a12">Riserva</text>
+<line x1="260" y1="595" x2="340" y2="595" stroke="#8f2d27" stroke-width=".7" opacity=".8"/>
+<text x="300" y="617" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#241a12" opacity=".85">2019 · 75CL</text>
+<text x="300" y="633" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#241a12" opacity=".6">CHIANTI CLASSICO DOCG</text>
+</g>
+</svg>

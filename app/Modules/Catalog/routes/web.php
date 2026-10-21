@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Modules\Catalog\Http\Controllers\BrandController;
 use App\Modules\Catalog\Http\Controllers\CategoryController;
+use App\Modules\Catalog\Http\Controllers\CollectionController;
 use App\Modules\Catalog\Http\Controllers\HomeController;
 use App\Modules\Catalog\Http\Controllers\LegacyProductController;
 use App\Modules\Catalog\Http\Controllers\NewProductController;
@@ -34,6 +35,14 @@ Route::get('/contact', [PageController::class, 'contact'])->name('pages.contact'
 Route::get('/a-propos', [PageController::class, 'about'])->name('pages.about');
 Route::get('/cgv', [PageController::class, 'terms'])->name('pages.terms');
 Route::get('/retours', [PageController::class, 'returns'])->name('pages.returns');
+Route::get('/cadeaux', [PageController::class, 'gifts'])->name('pages.gifts');
+Route::get('/livraison', [PageController::class, 'delivery'])->name('pages.delivery');
+
+// Cave de vins : collection complète et listes par catégorie.
+Route::get('/vins', [CollectionController::class, 'index'])->name('wines.index');
+Route::get('/vins/{slug}', [CategoryController::class, 'show'])
+    ->where('slug', '[a-z0-9][a-z0-9-]*')
+    ->name('wines.category');
 
 Route::get('/produits/{slug}', [NewProductController::class, 'show'])
     ->where('slug', '[a-z0-9][a-z0-9-]*')

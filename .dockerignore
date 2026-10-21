@@ -1,0 +1,17 @@
+.git
+.github
+node_modules
+vendor
+.env
+.env.*
+!.env.example
+database/*.sqlite
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+public/storage
+public/build/hot
+legacy-drupal-logos
+out
+.DS_Store

@@ -147,6 +147,21 @@ class ProductController extends Controller
             'stock' => ['nullable', 'integer', 'min:0'],
             'images' => ['nullable', 'array'],
             'images.*' => ['image', 'max:5120'],
+
+            // Fiche vin (stockée dans le JSON `specifications`)
+            'millesime' => ['nullable', 'string', 'max:12'],
+            'region' => ['nullable', 'string', 'max:120'],
+            'pays' => ['nullable', 'string', 'max:80'],
+            'appellation' => ['nullable', 'string', 'max:120'],
+            'cepage' => ['nullable', 'string', 'max:160'],
+            'alcool' => ['nullable', 'string', 'max:24'],
+            'format' => ['nullable', 'string', 'max:24'],
+            'service' => ['nullable', 'string', 'max:60'],
+            'garde' => ['nullable', 'string', 'max:120'],
+            'notes_degustation' => ['nullable', 'string', 'max:4000'],
+            'accords' => ['nullable', 'string', 'max:1000'],
+            'note' => ['nullable', 'integer', 'min:0', 'max:100'],
+            'note_source' => ['nullable', 'string', 'max:60'],
         ]);
     }
 }

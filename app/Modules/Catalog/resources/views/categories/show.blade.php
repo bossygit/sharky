@@ -1,37 +1,27 @@
 @extends('catalog::layouts.app')
 
-@section('title', ($category->meta_title ?: $category->name).' | '.config('app.name'))
-@section('meta_description', $category->meta_description ?: 'Découvrez les produits de la catégorie '.$category->name.' sur nasande.cg.')
-
-@section('breadcrumb')
-    <nav class="container breadcrumb" aria-label="Fil d'Ariane">
-        <ol>
-            <li><a href="{{ route('home') }}">Accueil</a></li>
-            <li aria-current="page">{{ $category->name }}</li>
-        </ol>
-    </nav>
-@endsection
+@section('title', ($category->meta_title ?: $category->name).' — Nasande Vins')
+@section('meta_description', $category->meta_description ?: \Illuminate\Support\Str::limit(strip_tags((string) $category->description), 155) ?: 'Découvrez '.$category->name.' de la cave Nasande Vins, livrés à Brazzaville.')
 
 @section('content')
-    <section class="container" style="padding: 2rem 0;">
-        <header style="margin-bottom: 2rem;">
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Fil d'Ariane">
+                <ol>
+                    <li><a href="{{ route('home') }}">Accueil</a></li>
+                    <li><a href="{{ route('wines.index') }}">La cave</a></li>
+                    <li aria-current="page">{{ $category->name }}</li>
+                </ol>
+            </nav>
             <h1>{{ $category->name }}</h1>
             @if ($category->description)
-                <div style="color: var(--c-muted);">{!! $category->description !!}</div>
+                <p class="lede">{{ strip_tags($category->description) }}</p>
             @endif
-            <p style="color: var(--c-muted); font-size: .9rem;">{{ $products->total() }} produit{{ $products->total() > 1 ? 's' : '' }}</p>
-        </header>
+            <p class="page-hero-meta">{{ $products->total() }} référence{{ $products->total() > 1 ? 's' : '' }} · Livraison à {{ config('commerce.delivery.city', 'Brazzaville') }}</p>
+        </div>
+    </section>
 
-        @if ($products->isEmpty())
-            <p>Aucun produit dans cette catégorie pour le moment.</p>
-        @else
-            <div class="product-grid">
-                @foreach ($products as $product)
-                    @include('catalog::partials.product-card', ['product' => $product])
-                @endforeach
-            </div>
-
-            {{ $products->onEachSide(1)->links() }}
-        @endif
+    <section class="container" style="padding-top:1.25rem;">
+        @include('catalog::partials.plp', ['products' => $products, 'categories' => $categories, 'activeCategory' => $category, 'sort' => $sort])
     </section>
 @endsection

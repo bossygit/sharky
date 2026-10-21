@@ -37,4 +37,18 @@ class PageController extends Controller
             'contact' => StorefrontContact::current(),
         ]);
     }
+
+    public function gifts(): View
+    {
+        return view('catalog::pages.gifts', [
+            'contact' => StorefrontContact::current(),
+        ]);
+    }
+
+    public function delivery(): View
+    {
+        return view('catalog::pages.delivery', [
+            'contact' => StorefrontContact::current(),
+        ]);
+    }
 }

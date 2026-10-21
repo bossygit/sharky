@@ -61,7 +61,11 @@ class SearchTest extends TestCase
         $this->get(route('home'))
             ->assertOk()
             ->assertSee('id="search-suggest"', false)
-            ->assertSee('#search-suggest:empty', false)
-            ->assertSee('this.value.trim().length>=2', false);
+            ->assertSee('data-suggest-url', false);
+
+        $this->assertStringContainsString(
+            '#search-suggest:empty',
+            (string) file_get_contents(public_path('css/vins.css'))
+        );
     }
 }

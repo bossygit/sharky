@@ -95,6 +95,66 @@
             <textarea id="meta_description" name="meta_description" style="min-height:80px;">{{ old('meta_description', $product->meta_description) }}</textarea>
         </div>
 
+        @php
+            $spec = is_array($product->specifications) ? $product->specifications : [];
+        @endphp
+        <div class="card">
+            <h2>Détails vin</h2>
+            <p class="muted" style="margin-top:0;">Ces champs alimentent la fiche produit : millésime, région, cépage, notes de dégustation, note critique.</p>
+            <div class="row">
+                <div>
+                    <label for="millesime">Millésime</label>
+                    <input id="millesime" name="millesime" value="{{ old('millesime', $spec['millesime'] ?? '') }}" placeholder="2019 ou NV">
+                </div>
+                <div>
+                    <label for="format">Format</label>
+                    <input id="format" name="format" value="{{ old('format', $spec['format'] ?? '') }}" placeholder="75 cl">
+                </div>
+                <div>
+                    <label for="alcool">Alcool</label>
+                    <input id="alcool" name="alcool" value="{{ old('alcool', $spec['alcool'] ?? '') }}" placeholder="13,5 %">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <label for="region">Région</label>
+                    <input id="region" name="region" value="{{ old('region', $spec['region'] ?? '') }}" placeholder="Bordeaux">
+                </div>
+                <div>
+                    <label for="pays">Pays</label>
+                    <input id="pays" name="pays" value="{{ old('pays', $spec['pays'] ?? '') }}" placeholder="France">
+                </div>
+            </div>
+            <label for="appellation">Appellation</label>
+            <input id="appellation" name="appellation" value="{{ old('appellation', $spec['appellation'] ?? '') }}" placeholder="Margaux AOC">
+            <label for="cepage">Cépage</label>
+            <input id="cepage" name="cepage" value="{{ old('cepage', $spec['cepage'] ?? '') }}" placeholder="Cabernet Sauvignon, Merlot">
+            <div class="row">
+                <div>
+                    <label for="service">Température de service</label>
+                    <input id="service" name="service" value="{{ old('service', $spec['service'] ?? '') }}" placeholder="16 – 18 °C">
+                </div>
+                <div>
+                    <label for="garde">Garde</label>
+                    <input id="garde" name="garde" value="{{ old('garde', $spec['garde'] ?? '') }}" placeholder="Garde 10 à 15 ans">
+                </div>
+            </div>
+            <label for="notes_degustation">Notes de dégustation</label>
+            <textarea id="notes_degustation" name="notes_degustation" style="min-height:100px;">{{ old('notes_degustation', $spec['notes_degustation'] ?? '') }}</textarea>
+            <label for="accords">Accords à table</label>
+            <textarea id="accords" name="accords" style="min-height:70px;">{{ old('accords', $spec['accords'] ?? '') }}</textarea>
+            <div class="row">
+                <div>
+                    <label for="note">Note critique (/100)</label>
+                    <input id="note" type="number" name="note" min="0" max="100" value="{{ old('note', $spec['note'] ?? '') }}">
+                </div>
+                <div>
+                    <label for="note_source">Source de la note</label>
+                    <input id="note_source" name="note_source" value="{{ old('note_source', $spec['note_source'] ?? '') }}" placeholder="Wine Advocate">
+                </div>
+            </div>
+        </div>
+
         <div class="card">
             <h2>Images</h2>
             @if ($isEdit && $product->images->isNotEmpty())

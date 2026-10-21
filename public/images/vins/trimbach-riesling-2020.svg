@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Trimbach Riesling">
+
+<g transform="translate(300,0.0) scale(1.0) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="101" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gtrimbachriesling2020" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4b502f"/>
+      <stop offset=".22" stop-color="#6e7445"/>
+      <stop offset=".38" stop-color="#d5e286"/>
+      <stop offset=".55" stop-color="#8a9257"/>
+      <stop offset=".85" stop-color="#63693e"/>
+      <stop offset="1" stop-color="#45492b"/>
+    </linearGradient>
+    <linearGradient id="vtrimbachriesling2020" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 230.0 734.0 L 230.0 392.0 C 230.0 358.7, 273.0 333.1, 282.0 328.0 L 282.0 168.0 L 318.0 168.0 L 318.0 328.0 C 327.0 333.1, 370.0 358.7, 370.0 392.0 L 370.0 734.0 Q 300.0 744.0 230.0 734.0 Z" fill="url(#gtrimbachriesling2020)"/>
+  <path d="M 230.0 734.0 L 230.0 392.0 C 230.0 358.7, 273.0 333.1, 282.0 328.0 L 282.0 168.0 L 318.0 168.0 L 318.0 328.0 C 327.0 333.1, 370.0 358.7, 370.0 392.0 L 370.0 734.0 Q 300.0 744.0 230.0 734.0 Z" fill="url(#vtrimbachriesling2020)"/>
+  <path d="M 246 402 L 246 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="280.0" y="116" width="40" height="60.0"
+        fill="#8e6c3c" rx="2"/>
+  <rect x="280.0" y="132" width="40" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f4ebd8" stroke="#8e6c3c" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#8e6c3c" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#8e6c3c">TRIMBACH</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#231c13">Riesling</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#8e6c3c" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#231c13" opacity=".85">2020 · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#231c13" opacity=".6">ALSACE AOC</text>
+</g>
+</svg>

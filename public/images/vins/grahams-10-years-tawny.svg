@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Graham's 10 Year Old Tawny Port">
+
+<g transform="translate(300,0.0) scale(1.0) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="115" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="ggrahams10yearstawny" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#201109"/>
+      <stop offset=".22" stop-color="#2f180e"/>
+      <stop offset=".38" stop-color="#5b301b"/>
+      <stop offset=".55" stop-color="#3b1f12"/>
+      <stop offset=".85" stop-color="#2a160c"/>
+      <stop offset="1" stop-color="#1d0f09"/>
+    </linearGradient>
+    <linearGradient id="vgrahams10yearstawny" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 220.0 733.0 L 220.0 430.0 C 220.0 380.1, 267.0 341.7, 276.0 334.0 L 276.0 204.0 L 324.0 204.0 L 324.0 334.0 C 333.0 341.7, 380.0 380.1, 380.0 430.0 L 380.0 733.0 Q 300.0 743.0 220.0 733.0 Z" fill="url(#ggrahams10yearstawny)"/>
+  <path d="M 220.0 733.0 L 220.0 430.0 C 220.0 380.1, 267.0 341.7, 276.0 334.0 L 276.0 204.0 L 324.0 204.0 L 324.0 334.0 C 333.0 341.7, 380.0 380.1, 380.0 430.0 L 380.0 733.0 Q 300.0 743.0 220.0 733.0 Z" fill="url(#vgrahams10yearstawny)"/>
+  <path d="M 236 440 L 236 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="274.0" y="152" width="52" height="60.0"
+        fill="#9d7a45" rx="2"/>
+  <rect x="274.0" y="168" width="52" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f3ead8" stroke="#9d7a45" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#9d7a45" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#9d7a45">GRAHAM'S</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241b12">10 Year Old Tawny</text>
+<text x="300" y="573" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241b12">Port</text>
+<line x1="260" y1="595" x2="340" y2="595" stroke="#9d7a45" stroke-width=".7" opacity=".8"/>
+<text x="300" y="617" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#241b12" opacity=".85">NV · 75CL</text>
+<text x="300" y="633" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#241b12" opacity=".6">PORTO DOC</text>
+</g>
+</svg>

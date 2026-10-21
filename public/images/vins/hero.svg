@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" width="1800" height="1100" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Cave Nasande Vins">
+  <defs>
+    <radialGradient id="glow" cx=".72" cy=".42" r=".55">
+      <stop offset="0" stop-color="#8d4c2c" stop-opacity=".55"/>
+      <stop offset=".55" stop-color="#4a1520" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#180b0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#170d0b"/>
+      <stop offset=".45" stop-color="#2a0f14"/>
+      <stop offset="1" stop-color="#120a09"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".06"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="1800" height="1100" fill="url(#bg)"/>
+  <rect width="1800" height="1100" fill="url(#glow)"/>
+  <g fill="none" stroke="#b08d57" stroke-opacity=".26" stroke-width="1.4">
+    <path d="M 860 940 L 860 330 A 420 420 0 0 1 1700 330 L 1700 940"/>
+    <path d="M 920 940 L 920 350 A 360 360 0 0 1 1640 350 L 1640 940" stroke-opacity=".12"/>
+    <line x1="80" y1="940" x2="1720" y2="940" stroke-opacity=".3"/>
+  </g>
+  <g>
+<g transform="translate(1180,70) scale(1.22) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="112" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gchateaumargaux2017" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0e130d"/>
+      <stop offset=".22" stop-color="#151c14"/>
+      <stop offset=".38" stop-color="#293726"/>
+      <stop offset=".55" stop-color="#1b2419"/>
+      <stop offset=".85" stop-color="#131912"/>
+      <stop offset="1" stop-color="#0d120c"/>
+    </linearGradient>
+    <linearGradient id="vchateaumargaux2017" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 1102.0 734.0 L 1102.0 410.0 C 1102.0 362.2, 1148.0 325.4, 1157.0 318.0 L 1157.0 196.0 L 1203.0 196.0 L 1203.0 318.0 C 1212.0 325.4, 1258.0 362.2, 1258.0 410.0 L 1258.0 734.0 Q 1180.0 744.0 1102.0 734.0 Z" fill="url(#gchateaumargaux2017)"/>
+  <path d="M 1102.0 734.0 L 1102.0 410.0 C 1102.0 362.2, 1148.0 325.4, 1157.0 318.0 L 1157.0 196.0 L 1203.0 196.0 L 1203.0 318.0 C 1212.0 325.4, 1258.0 362.2, 1258.0 410.0 L 1258.0 734.0 Q 1180.0 744.0 1102.0 734.0 Z" fill="url(#vchateaumargaux2017)"/>
+  <path d="M 238 420 L 238 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="275.0" y="144" width="50" height="60.0"
+        fill="#9a7a48" rx="2"/>
+  <rect x="275.0" y="160" width="50" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f1e7d2" stroke="#9a7a48" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#9a7a48" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#9a7a48">CHÂTEAU MARGAUX</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#1c1610">Grand Vin</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#9a7a48" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#1c1610" opacity=".85">2017 · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#1c1610" opacity=".6">MARGAUX AOC</text>
+</g>
+<g transform="translate(1380,40) scale(1.15) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="128" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gruinartblancdeblancs" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#181f14"/>
+      <stop offset=".22" stop-color="#232e1e"/>
+      <stop offset=".38" stop-color="#44593a"/>
+      <stop offset=".55" stop-color="#2c3a26"/>
+      <stop offset=".85" stop-color="#1f291b"/>
+      <stop offset="1" stop-color="#161d13"/>
+    </linearGradient>
+    <linearGradient id="vruinartblancdeblancs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 1291.0 732.0 L 1291.0 438.0 C 1291.0 400.6, 1344.0 371.8, 1353.0 366.0 L 1353.0 188.0 L 1407.0 188.0 L 1407.0 366.0 C 1416.0 371.8, 1469.0 400.6, 1469.0 438.0 L 1469.0 732.0 Q 1380.0 742.0 1291.0 732.0 Z" fill="url(#gruinartblancdeblancs)"/>
+  <path d="M 1291.0 732.0 L 1291.0 438.0 C 1291.0 400.6, 1344.0 371.8, 1353.0 366.0 L 1353.0 188.0 L 1407.0 188.0 L 1407.0 366.0 C 1416.0 371.8, 1469.0 400.6, 1469.0 438.0 L 1469.0 732.0 Q 1380.0 742.0 1291.0 732.0 Z" fill="url(#vruinartblancdeblancs)"/>
+  <path d="M 227 448 L 227 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="271.0" y="136" width="58" height="60.0"
+        fill="#a8844f" rx="2"/>
+  <rect x="271.0" y="152" width="58" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f3e9d4" stroke="#a8844f" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#a8844f" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#a8844f">RUINART</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#221a12">Blanc de Blancs</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#a8844f" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#221a12" opacity=".85">NV · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#221a12" opacity=".6">CHAMPAGNE AOC</text>
+</g>
+<g transform="translate(1580,90) scale(1.1) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="112" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gwhisperingangel2023" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#766b5f"/>
+      <stop offset=".22" stop-color="#ac9c8b"/>
+      <stop offset=".38" stop-color="#ffffff"/>
+      <stop offset=".55" stop-color="#d8c3ae"/>
+      <stop offset=".85" stop-color="#9b8c7d"/>
+      <stop offset="1" stop-color="#6c6157"/>
+    </linearGradient>
+    <linearGradient id="vwhisperingangel2023" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 1502.0 734.0 L 1502.0 410.0 C 1502.0 362.2, 1548.0 325.4, 1557.0 318.0 L 1557.0 196.0 L 1603.0 196.0 L 1603.0 318.0 C 1612.0 325.4, 1658.0 362.2, 1658.0 410.0 L 1658.0 734.0 Q 1580.0 744.0 1502.0 734.0 Z" fill="url(#gwhisperingangel2023)"/>
+  <path d="M 1502.0 734.0 L 1502.0 410.0 C 1502.0 362.2, 1548.0 325.4, 1557.0 318.0 L 1557.0 196.0 L 1603.0 196.0 L 1603.0 318.0 C 1612.0 325.4, 1658.0 362.2, 1658.0 410.0 L 1658.0 734.0 Q 1580.0 744.0 1502.0 734.0 Z" fill="url(#vwhisperingangel2023)"/>
+  <path d="M 238 420 L 238 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="275.0" y="144" width="50" height="60.0"
+        fill="#b08d57" rx="2"/>
+  <rect x="275.0" y="160" width="50" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f4ebda" stroke="#b08d57" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#b08d57" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#b08d57">CHÂTEAU D'ESCLANS</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241c13">Whispering Angel</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#b08d57" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#241c13" opacity=".85">2023 · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#241c13" opacity=".6">CÔTES DE PROVENCE AOC</text>
+</g></g>
+  <rect width="1800" height="1100" filter="url(#grain)" opacity=".55"/>
+  <rect width="1800" height="1100" fill="#0e0706" opacity=".12"/>
+</svg>

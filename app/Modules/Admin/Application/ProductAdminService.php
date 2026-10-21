@@ -37,6 +37,7 @@ class ProductAdminService
                 'meta_description' => $data['meta_description'] ?? null,
                 'status' => 'draft',
                 'featured' => (bool) ($data['featured'] ?? false),
+                'specifications' => $this->wineSpecifications($data, []),
                 'created_by_user_id' => $userId,
                 'search_index_dirty' => true,
             ]);
@@ -74,6 +75,7 @@ class ProductAdminService
                 'meta_title' => $data['meta_title'] ?? null,
                 'meta_description' => $data['meta_description'] ?? null,
                 'featured' => (bool) ($data['featured'] ?? false),
+                'specifications' => $this->wineSpecifications($data, is_array($product->specifications) ? $product->specifications : []),
                 'search_index_dirty' => true,
             ]);
 
@@ -148,6 +150,39 @@ class ProductAdminService
         $product->images()->detach($media->id);
         $product->search_index_dirty = true;
         $product->save();
+    }
+
+    /**
+     * Fusionne les champs vin du formulaire dans le JSON `specifications`,
+     * sans écraser les clés gérées ailleurs (type, catégorie, etc.).
+     *
+     * @param  array<string, mixed>  $data
+     * @param  array<string, mixed>  $existing
+     * @return array<string, mixed>|null
+     */
+    private function wineSpecifications(array $data, array $existing): ?array
+    {
+        $keys = [
+            'millesime', 'region', 'pays', 'appellation', 'cepage', 'alcool',
+            'format', 'service', 'garde', 'notes_degustation', 'accords',
+            'note', 'note_source',
+        ];
+
+        $specs = $existing;
+
+        foreach ($keys as $key) {
+            if (! array_key_exists($key, $data)) {
+                continue;
+            }
+            $value = $data[$key];
+            if ($value === null || $value === '') {
+                unset($specs[$key]);
+            } else {
+                $specs[$key] = $key === 'note' ? (int) $value : $value;
+            }
+        }
+
+        return $specs === [] ? null : $specs;
     }
 
     private function assertImage(UploadedFile $file): void

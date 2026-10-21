@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Veuve Clicquot Yellow Label">
+
+<g transform="translate(300,0.0) scale(1.0) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="128" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gveuveclicquotyellowlabel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#161d11"/>
+      <stop offset=".22" stop-color="#202a19"/>
+      <stop offset=".38" stop-color="#3e5231"/>
+      <stop offset=".55" stop-color="#283520"/>
+      <stop offset=".85" stop-color="#1c2617"/>
+      <stop offset="1" stop-color="#141a10"/>
+    </linearGradient>
+    <linearGradient id="vveuveclicquotyellowlabel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 211.0 732.0 L 211.0 438.0 C 211.0 400.6, 264.0 371.8, 273.0 366.0 L 273.0 188.0 L 327.0 188.0 L 327.0 366.0 C 336.0 371.8, 389.0 400.6, 389.0 438.0 L 389.0 732.0 Q 300.0 742.0 211.0 732.0 Z" fill="url(#gveuveclicquotyellowlabel)"/>
+  <path d="M 211.0 732.0 L 211.0 438.0 C 211.0 400.6, 264.0 371.8, 273.0 366.0 L 273.0 188.0 L 327.0 188.0 L 327.0 366.0 C 336.0 371.8, 389.0 400.6, 389.0 438.0 L 389.0 732.0 Q 300.0 742.0 211.0 732.0 Z" fill="url(#vveuveclicquotyellowlabel)"/>
+  <path d="M 227 448 L 227 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="271.0" y="136" width="58" height="60.0"
+        fill="#1c1710" rx="2"/>
+  <rect x="271.0" y="152" width="58" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#e9b73b" stroke="#1c1710" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#1c1710" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#1c1710">VEUVE CLICQUOT</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#1c1710">Yellow Label</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#1c1710" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#1c1710" opacity=".85">NV · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#1c1710" opacity=".6">CHAMPAGNE AOC</text>
+</g>
+</svg>

@@ -50,7 +50,7 @@ class CheckoutService
             throw new InvalidArgumentException('Mode de paiement indisponible.');
         }
 
-        return DB::transaction(function () use ($customer, $data, $city, $provider) {
+        $order = DB::transaction(function () use ($customer, $data, $city, $provider) {
             $subtotal = $this->cart->subtotalMinor();
             $shipping = $this->shippingFeeMinor();
             $total = $subtotal + $shipping;
@@ -100,8 +100,20 @@ class CheckoutService
 
             $this->cart->clear();
 
-            $fresh = $order->fresh(['items']);
-            Mail::to($order->customer_email)->send(new OrderConfirmationMail($fresh));
+            return $order->fresh(['items']);
+        });
+
+        // Les emails ne doivent jamais faire échouer une commande déjà payée/préparée :
+        // un SMTP indisponible est journalisé, la commande reste valide.
+        $this->sendNotifications($order);
+
+        return $order->fresh(['items', 'payments']);
+    }
+
+    private function sendNotifications(Order $order): void
+    {
+        try {
+            Mail::to($order->customer_email)->send(new OrderConfirmationMail($order));
 
             $adminEmails = User::query()
                 ->whereIn('role', ['admin', 'catalog-editor'])
@@ -110,10 +122,13 @@ class CheckoutService
                 ->all();
 
             if ($adminEmails !== []) {
-                Mail::to($adminEmails)->send(new NewOrderAdminMail($fresh));
+                Mail::to($adminEmails)->send(new NewOrderAdminMail($order));
             }
-
-            return $order->fresh(['items', 'payments']);
-        });
+        } catch (\Throwable $e) {
+            \Illuminate\Support\Facades\Log::warning('Commande enregistrée mais emails non envoyés.', [
+                'order_id' => $order->id,
+                'error' => $e->getMessage(),
+            ]);
+        }
     }
 }

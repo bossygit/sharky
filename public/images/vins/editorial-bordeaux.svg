@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Bordeaux, l'élégance intemporelle">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0b0d"/><stop offset="1" stop-color="#3d1018"/>
+    </linearGradient>
+    <radialGradient id="s" cx=".5" cy=".35" r=".7">
+      <stop offset="0" stop-color="#fff" stop-opacity=".16"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <rect width="900" height="1100" fill="url(#s)"/>
+  <g fill="none" stroke="#d8b982" stroke-opacity=".35" stroke-width="1">
+    <rect x="70" y="70" width="760" height="960"/>
+    <rect x="86" y="86" width="728" height="928" stroke-opacity=".16"/>
+  </g>
+  <g>
+<g transform="translate(340,120) scale(1.05) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="112" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gchateaulynchbages2018" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#11170f"/>
+      <stop offset=".22" stop-color="#192116"/>
+      <stop offset=".38" stop-color="#31412b"/>
+      <stop offset=".55" stop-color="#202a1c"/>
+      <stop offset=".85" stop-color="#171e14"/>
+      <stop offset="1" stop-color="#10150e"/>
+    </linearGradient>
+    <linearGradient id="vchateaulynchbages2018" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 262.0 734.0 L 262.0 410.0 C 262.0 362.2, 308.0 325.4, 317.0 318.0 L 317.0 196.0 L 363.0 196.0 L 363.0 318.0 C 372.0 325.4, 418.0 362.2, 418.0 410.0 L 418.0 734.0 Q 340.0 744.0 262.0 734.0 Z" fill="url(#gchateaulynchbages2018)"/>
+  <path d="M 262.0 734.0 L 262.0 410.0 C 262.0 362.2, 308.0 325.4, 317.0 318.0 L 317.0 196.0 L 363.0 196.0 L 363.0 318.0 C 372.0 325.4, 418.0 362.2, 418.0 410.0 L 418.0 734.0 Q 340.0 744.0 262.0 734.0 Z" fill="url(#vchateaulynchbages2018)"/>
+  <path d="M 238 420 L 238 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="275.0" y="144" width="50" height="60.0"
+        fill="#8f6f3f" rx="2"/>
+  <rect x="275.0" y="160" width="50" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f4ecd9" stroke="#8f6f3f" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#8f6f3f" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#8f6f3f">CHÂTEAU LYNCH-BAGES</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#211b13">Grand Cru Classé</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#8f6f3f" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#211b13" opacity=".85">2018 · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#211b13" opacity=".6">PAUILLAC AOC</text>
+</g>
+<g transform="translate(570,200) scale(0.95) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="112" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gchateaugloria2019" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f1710"/>
+      <stop offset=".22" stop-color="#172118"/>
+      <stop offset=".38" stop-color="#2c412e"/>
+      <stop offset=".55" stop-color="#1d2a1e"/>
+      <stop offset=".85" stop-color="#141e15"/>
+      <stop offset="1" stop-color="#0e150f"/>
+    </linearGradient>
+    <linearGradient id="vchateaugloria2019" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 492.0 734.0 L 492.0 410.0 C 492.0 362.2, 538.0 325.4, 547.0 318.0 L 547.0 196.0 L 593.0 196.0 L 593.0 318.0 C 602.0 325.4, 648.0 362.2, 648.0 410.0 L 648.0 734.0 Q 570.0 744.0 492.0 734.0 Z" fill="url(#gchateaugloria2019)"/>
+  <path d="M 492.0 734.0 L 492.0 410.0 C 492.0 362.2, 538.0 325.4, 547.0 318.0 L 547.0 196.0 L 593.0 196.0 L 593.0 318.0 C 602.0 325.4, 648.0 362.2, 648.0 410.0 L 648.0 734.0 Q 570.0 744.0 492.0 734.0 Z" fill="url(#vchateaugloria2019)"/>
+  <path d="M 238 420 L 238 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="275.0" y="144" width="50" height="60.0"
+        fill="#a07d48" rx="2"/>
+  <rect x="275.0" y="160" width="50" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#efe4cd" stroke="#a07d48" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#a07d48" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#a07d48">CHÂTEAU GLORIA</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241c13">Saint-Julien</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#a07d48" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#241c13" opacity=".85">2019 · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#241c13" opacity=".6">SAINT-JULIEN AOC</text>
+</g></g>
+</svg>

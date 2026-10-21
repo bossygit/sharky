@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100" preserveAspectRatio="xMidYMid slice" role="img" aria-label="vins-doux">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1a0e"/><stop offset="1" stop-color="#6d4a1f"/></linearGradient></defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="450" cy="420" r="330" fill="#fff" opacity=".045"/>
+  <g>
+<g transform="translate(330,100) scale(0.92) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="112" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="gchateausuduiraut2016" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6e5a32"/>
+      <stop offset=".22" stop-color="#a08349"/>
+      <stop offset=".38" stop-color="#fffe8e"/>
+      <stop offset=".55" stop-color="#c9a45c"/>
+      <stop offset=".85" stop-color="#907642"/>
+      <stop offset="1" stop-color="#64522e"/>
+    </linearGradient>
+    <linearGradient id="vchateausuduiraut2016" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 252.0 734.0 L 252.0 410.0 C 252.0 362.2, 298.0 325.4, 307.0 318.0 L 307.0 196.0 L 353.0 196.0 L 353.0 318.0 C 362.0 325.4, 408.0 362.2, 408.0 410.0 L 408.0 734.0 Q 330.0 744.0 252.0 734.0 Z" fill="url(#gchateausuduiraut2016)"/>
+  <path d="M 252.0 734.0 L 252.0 410.0 C 252.0 362.2, 298.0 325.4, 307.0 318.0 L 307.0 196.0 L 353.0 196.0 L 353.0 318.0 C 362.0 325.4, 408.0 362.2, 408.0 410.0 L 408.0 734.0 Q 330.0 744.0 252.0 734.0 Z" fill="url(#vchateausuduiraut2016)"/>
+  <path d="M 238 420 L 238 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="275.0" y="144" width="50" height="60.0"
+        fill="#a07c43" rx="2"/>
+  <rect x="275.0" y="160" width="50" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f3e8d0" stroke="#a07c43" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#a07c43" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#a07c43">CHÂTEAU SUDUIRAUT</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241b12">Sauternes</text>
+<line x1="260" y1="577" x2="340" y2="577" stroke="#a07c43" stroke-width=".7" opacity=".8"/>
+<text x="300" y="599" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#241b12" opacity=".85">2016 · 75CL</text>
+<text x="300" y="615" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#241b12" opacity=".6">SAUTERNES AOC</text>
+</g>
+<g transform="translate(560,180) scale(0.8) translate(-300,-720)">
+  <ellipse cx="300" cy="748" rx="115" ry="11" fill="#1a120d" opacity=".20"/>
+  <defs>
+    <linearGradient id="ggrahams10yearstawny" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#201109"/>
+      <stop offset=".22" stop-color="#2f180e"/>
+      <stop offset=".38" stop-color="#5b301b"/>
+      <stop offset=".55" stop-color="#3b1f12"/>
+      <stop offset=".85" stop-color="#2a160c"/>
+      <stop offset="1" stop-color="#1d0f09"/>
+    </linearGradient>
+    <linearGradient id="vgrahams10yearstawny" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/>
+      <stop offset=".75" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".28"/>
+    </linearGradient>
+  </defs>
+  <path d="M 480.0 733.0 L 480.0 430.0 C 480.0 380.1, 527.0 341.7, 536.0 334.0 L 536.0 204.0 L 584.0 204.0 L 584.0 334.0 C 593.0 341.7, 640.0 380.1, 640.0 430.0 L 640.0 733.0 Q 560.0 743.0 480.0 733.0 Z" fill="url(#ggrahams10yearstawny)"/>
+  <path d="M 480.0 733.0 L 480.0 430.0 C 480.0 380.1, 527.0 341.7, 536.0 334.0 L 536.0 204.0 L 584.0 204.0 L 584.0 334.0 C 593.0 341.7, 640.0 380.1, 640.0 430.0 L 640.0 733.0 Q 560.0 743.0 480.0 733.0 Z" fill="url(#vgrahams10yearstawny)"/>
+  <path d="M 236 440 L 236 700"
+        stroke="#fff" stroke-opacity=".16" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="274.0" y="152" width="52" height="60.0"
+        fill="#9d7a45" rx="2"/>
+  <rect x="274.0" y="168" width="52" height="3" fill="#000" opacity=".18"/>
+  <rect x="226" y="505" width="148" height="168" fill="#f3ead8" stroke="#9d7a45" stroke-width="1.1"/>
+<rect x="231" y="510" width="138" height="158" fill="none" stroke="#9d7a45" stroke-width="0.4" opacity=".7"/>
+<text x="300" y="532" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="2.4" fill="#9d7a45">GRAHAM'S</text>
+<text x="300" y="555" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241b12">10 Year Old Tawny</text>
+<text x="300" y="573" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#241b12">Port</text>
+<line x1="260" y1="595" x2="340" y2="595" stroke="#9d7a45" stroke-width=".7" opacity=".8"/>
+<text x="300" y="617" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="7.5" letter-spacing="1.6" fill="#241b12" opacity=".85">NV · 75CL</text>
+<text x="300" y="633" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="6.2" letter-spacing="1.1" fill="#241b12" opacity=".6">PORTO DOC</text>
+</g></g>
+</svg>

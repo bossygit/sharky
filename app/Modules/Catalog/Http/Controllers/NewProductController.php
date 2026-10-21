@@ -21,6 +21,19 @@ class NewProductController extends Controller
 
         $variant = $product->variants->firstWhere('is_default', true) ?? $product->variants->first();
 
-        return view('catalog::products.show', compact('product', 'variant'));
+        $categoryIds = $product->categories->pluck('id');
+
+        $related = Product::published()
+            ->whereKeyNot($product->id)
+            ->when($categoryIds->isNotEmpty(), fn ($q) => $q->whereHas(
+                'categories',
+                fn ($c) => $c->whereIn('categories.id', $categoryIds)
+            ))
+            ->with(['brand', 'variants', 'images'])
+            ->orderByDesc('featured')
+            ->limit(4)
+            ->get();
+
+        return view('catalog::products.show', compact('product', 'variant', 'related'));
     }
 }

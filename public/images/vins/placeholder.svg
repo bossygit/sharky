@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+<rect width="600" height="800" fill="#f3ebdc"/>
+<g fill="none" stroke="#b08d57" stroke-opacity=".55" stroke-width="2">
+  <path d="M 260 640 L 260 300 C 260 240, 240 220, 240 180 L 360 180 C 360 220, 340 240, 340 300 L 340 640 Z"/>
+  <line x1="240" y1="170" x2="360" y2="170"/>
+</g>
+<text x="300" y="700" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#7d7266">Nasande Vins</text>
+</svg>

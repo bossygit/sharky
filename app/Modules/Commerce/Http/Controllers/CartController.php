@@ -32,7 +32,8 @@ class CartController extends Controller
         }
 
         $variantIds = array_keys($this->cart->items());
-        $variants = Variant::with('product')->whereIn('id', $variantIds)->get()->keyBy('id');
+        $variants = Variant::with(['product.images', 'product.brand', 'product.variants.images'])
+            ->whereIn('id', $variantIds)->get()->keyBy('id');
         $lines = [];
         foreach ($this->cart->items() as $vid => $item) {
             $lines[] = ['item' => $item, 'variant' => $variants->get($vid)];

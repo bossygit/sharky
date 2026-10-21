@@ -13,13 +13,12 @@
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
-    # ── 1. www -> non-www (canonicalisation SEO, corrige le doublon) ──
-    RewriteCond %{HTTP_HOST} ^www\.nasande\.cg [NC]
-    RewriteRule ^ https://nasande.cg%{REQUEST_URI} [L,R=301]
+    # ── 1. Canonicalisation : gérée par le domaine Render / CDN ──────
+    # Pas de redirection www→non-www codée en dur ici : le site tourne
+    # aussi bien sur nasande-vins.onrender.com que sur un domaine custom.
 
-    # ── 2. HTTP -> HTTPS (HSTS repose dessus) ────────────────────────
-    RewriteCond %{HTTPS} off
-    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # ── 2. HTTPS : terminé par le proxy Render (X-Forwarded-Proto).
+    # Forcer ici provoquerait une boucle de redirection derrière le proxy.
 
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -41,8 +40,8 @@
     Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=()"
     Header always set X-Permitted-Cross-Domain-Policies "none"
 
-    # htmx = unpkg ; gtag inline + googletagmanager ; collect GA4 via connect/img.
-    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; font-src 'self' data:; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com"
+    # CSP : polices Google Fonts, aucun script tiers (pas de htmx sur cette branche).
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com"
 
     # Ne pas divulguer la techno / version
     Header unset X-Powered-By

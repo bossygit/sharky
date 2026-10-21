@@ -1,0 +1,53 @@
+databases:
+  - name: nasande-vins-db
+    databaseName: nasande_vins
+    user: nasande_vins
+    plan: free
+    region: frankfurt
+
+services:
+  - type: web
+    name: nasande-vins
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: frankfurt
+    branch: feat/nasande-vins
+    healthCheckPath: /up
+    envVars:
+      - key: APP_NAME
+        value: Nasande Vins
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        value: https://nasande-vins.onrender.com
+      - key: DB_CONNECTION
+        value: pgsql
+      - key: DB_URL
+        fromDatabase:
+          name: nasande-vins-db
+          property: connectionString
+      - key: DB_SSLMODE
+        value: require
+      - key: SESSION_DRIVER
+        value: database
+      - key: SESSION_SECURE_COOKIE
+        value: "true"
+      - key: CACHE_STORE
+        value: database
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: SCOUT_DRIVER
+        value: database
+      - key: SCOUT_QUEUE
+        value: "false"
+      - key: MAIL_MAILER
+        value: log
+      - key: LOG_CHANNEL
+        value: stderr
+      - key: LOG_LEVEL
+        value: info

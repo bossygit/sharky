@@ -71,6 +71,12 @@ class Media extends Model
             return '/storage/'.ltrim($this->path, '/');
         }
 
+        // Visuels versionnés dans public/ (catalogue de démonstration, illustrations) :
+        // pas de lien symbolique storage à créer, l'URL est servie directement.
+        if ($this->disk === 'assets') {
+            return '/'.ltrim($this->path, '/');
+        }
+
         return Storage::disk($this->disk)->url($this->path);
     }
 
