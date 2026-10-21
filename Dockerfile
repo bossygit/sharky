@@ -12,9 +12,9 @@ FROM php:8.3-apache
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        libpq-dev libzip-dev libonig-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev unzip \
+        libpq-dev libzip-dev libonig-dev libicu-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev unzip \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install pdo_pgsql pdo_mysql zip opcache mbstring bcmath gd \
+    && docker-php-ext-install pdo_pgsql pdo_mysql zip opcache mbstring bcmath gd intl \
     && a2enmod rewrite headers expires deflate \
     && rm -rf /var/lib/apt/lists/*
 
