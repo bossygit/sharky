@@ -9,7 +9,10 @@
     $metaDesc = $product->meta_description
         ?: \Illuminate\Support\Str::limit(strip_tags((string) ($product->short_description_html ?: (string) $product->description_html)), 160);
     $metaDesc = $metaDesc !== '' ? $metaDesc : trim($product->title.' — '.($spec['millesime'] ?? '').' '.($spec['region'] ?? '').'. Livré à Brazzaville par Nasande Vins.');
-    $title = trim(($product->meta_title ?: $product->title).' | Nasande Vins');
+    $title = trim($product->meta_title ?: $product->title);
+    if (! str_contains($title, 'Nasande Vins')) {
+        $title .= ' | Nasande Vins';
+    }
     $score = isset($spec['note']) && is_numeric($spec['note']) ? (int) $spec['note'] : null;
     $stock = $variant?->stock;
     $inStock = $variant?->isInStock() ?? false;

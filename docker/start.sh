@@ -11,6 +11,13 @@ sed -i "s/:80>/:${PORT}>/" /etc/apache2/sites-available/000-default.conf
 php artisan migrate --force
 php artisan db:seed --class=VinsCatalogSeeder --force
 
+# Compte admin initial (idempotent) : uniquement si les variables sont fournies.
+if [ -n "${ADMIN_EMAIL:-}" ] && [ -n "${ADMIN_PASSWORD:-}" ]; then
+    php artisan vins:admin "$ADMIN_EMAIL" \
+        --password="$ADMIN_PASSWORD" \
+        --name="${ADMIN_NAME:-Admin Nasande Vins}"
+fi
+
 # Caches de production (config, routes, vues).
 php artisan optimize
 
