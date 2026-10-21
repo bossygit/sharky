@@ -20,7 +20,7 @@ class OrderConfirmationMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Confirmation commande '.$this->order->order_number.' — nasande.cg',
+            subject: 'Confirmation commande '.$this->order->order_number.' — Nasande Vins',
         );
     }
 

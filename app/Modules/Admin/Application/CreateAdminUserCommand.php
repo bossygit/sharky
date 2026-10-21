@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Hash;
 class CreateAdminUserCommand extends Command
 {
     protected $signature = 'admin:create-user
-        {--email=admin@nasande.cg : Email admin}
+        {--email=admin@nasande-vins.cg : Email admin}
         {--name=Administrateur : Nom}
         {--password= : Mot de passe (obligatoire)}';
 

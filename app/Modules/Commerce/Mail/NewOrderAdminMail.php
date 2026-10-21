@@ -20,7 +20,7 @@ class NewOrderAdminMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Nouvelle commande '.$this->order->order_number.' — nasande.cg',
+            subject: 'Nouvelle commande '.$this->order->order_number.' — Nasande Vins',
         );
     }
 

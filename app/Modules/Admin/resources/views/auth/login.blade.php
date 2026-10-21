@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="card">
-    <h1>Administration nasande.cg</h1>
+    <h1>Administration Nasande Vins</h1>
     <form method="POST" action="{{ route('admin.login.submit') }}">
         @csrf
         <label for="email">Email</label>

@@ -2,7 +2,7 @@ Confirmation de commande {{ $order->order_number }}
 
 Bonjour {{ $order->customer_name }},
 
-Merci pour votre commande sur nasande.cg.
+Merci pour votre commande sur Nasande Vins.
 
 Numéro : {{ $order->order_number }}
 Total : {{ number_format($order->total_minor, 0, ',', ' ') }} {{ $order->currency_code }}
@@ -19,4 +19,4 @@ Frais de livraison : {{ number_format($order->shipping_minor, 0, ',', ' ') }} {{
 
 Statut : {{ $order->status }}
 
-— nasande.cg
+— Nasande Vins

@@ -24,18 +24,18 @@ class StubLLMClient implements LLMClient
         $brand = trim($brandMatch[1] ?? 'Marque');
 
         $payload = [
-            'description_html' => '<p>'.e($title).' est un produit de la marque '.e($brand).', disponible sur nasande.cg.</p>',
+            'description_html' => '<p>'.e($title).' est un vin de la maison '.e($brand).', disponible chez Nasande Vins.</p>',
             'features' => [
-                'Qualité '.$brand,
-                'Adapté au climat tropical',
+                'Sélection caviste',
                 'Livraison à Brazzaville',
+                'Paiement à la livraison ou Mobile Money',
             ],
             'faqs' => [
-                ['q' => 'Comment commander ?', 'a' => 'Ajoutez au panier et validez le checkout par email OTP.'],
-                ['q' => 'Livraison où ?', 'a' => 'Brazzaville uniquement en V1.'],
+                ['q' => 'Comment commander ?', 'a' => 'Ajoutez au panier et validez le checkout ; nous vous appelons pour confirmer.'],
+                ['q' => 'Livraison où ?', 'a' => 'Brazzaville ; Pointe-Noire et autres villes sur demande.'],
             ],
-            'meta_title' => mb_substr($title.' | '.$brand.' | nasande', 0, 60),
-            'meta_description' => mb_substr('Découvrez '.$title.' ('.$brand.') sur nasande.cg — parapharmacie et beauté au Congo.', 0, 160),
+            'meta_title' => mb_substr($title.' | '.$brand.' | Nasande Vins', 0, 60),
+            'meta_description' => mb_substr('Découvrez '.$title.' ('.$brand.') chez Nasande Vins — vins et spiritueux livrés à Brazzaville.', 0, 160),
             'evidence' => [
                 ['field' => 'description_html', 'source_index' => 0, 'confidence' => 0.72],
             ],

@@ -20,7 +20,7 @@
         <input id="contact_whatsapp" type="text" name="contact_whatsapp" value="{{ old('contact_whatsapp', $contactWhatsapp) }}" placeholder="24206XXXXXXX">
 
         <label for="contact_email">Email de contact</label>
-        <input id="contact_email" type="email" name="contact_email" value="{{ old('contact_email', $contactEmail) }}" placeholder="bonjour@nasande.cg">
+        <input id="contact_email" type="email" name="contact_email" value="{{ old('contact_email', $contactEmail) }}" placeholder="bonjour@Nasande Vins">
 
         <button class="btn btn-primary" type="submit" style="margin-top:1rem;">Enregistrer</button>
     </form>

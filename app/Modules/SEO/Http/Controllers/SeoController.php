@@ -90,11 +90,11 @@ class SeoController extends Controller
         $brandCount = Brand::count();
         $categoryCount = Category::count();
 
-        $body = "# nasande.cg\n\n";
-        $body .= "> Boutique en ligne de parapharmacie, cosmétique et soin à Brazzaville (République du Congo).\n\n";
+        $body = "# Nasande Vins\n\n";
+        $body .= "> Cave en ligne de vins, champagnes et spiritueux à Brazzaville (République du Congo).\n\n";
         $body .= "## À propos\n\n";
-        $body .= "nasande.cg est une boutique en ligne basée à Brazzaville proposant {$productCount} produits ";
-        $body .= 'de parapharmacie, cosmétique, soin, hygiène, maternité et bébé. ';
+        $body .= "Nasande Vins est une cave en ligne basée à Brazzaville proposant {$productCount} références ";
+        $body .= 'de vins, champagnes, spiritueux et coffrets cadeaux. ';
         $body .= "Catalogue de {$brandCount} marques et {$categoryCount} catégories.\n\n";
         $body .= "## Livraison et paiement\n\n";
         $body .= "- Livraison : Brazzaville uniquement.\n";

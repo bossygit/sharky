@@ -19,7 +19,7 @@ class CustomerOtpMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Votre code de vérification — nasande.cg',
+            subject: 'Votre code de vérification — Nasande Vins',
         );
     }
 
