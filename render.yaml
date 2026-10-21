@@ -3,7 +3,7 @@ databases:
     databaseName: nasande_vins
     user: nasande_vins
     plan: free
-    region: frankfurt
+    region: virginia
 
 services:
   - type: web
@@ -11,7 +11,7 @@ services:
     runtime: docker
     dockerfilePath: ./Dockerfile
     plan: free
-    region: frankfurt
+    region: virginia
     branch: feat/nasande-vins
     healthCheckPath: /up
     envVars:
