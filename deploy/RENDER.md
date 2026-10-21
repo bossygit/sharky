@@ -2,6 +2,18 @@
 
 Service web Laravel + base PostgreSQL, déployés depuis la branche `feat/nasande-vins`.
 
+## État du déploiement (21/10/2026)
+
+- **URL** : https://nasande-vins.onrender.com
+- **Service** : `srv-dbc89k1srm7s73fvlevg` — Docker, plan gratuit, région Virginie
+- **Base** : base `nasande_vins` dans l'instance `epsv-db`, rôle dédié `nasande_user`
+- **Branche déployée** : `feat/nasande-vins`
+- **Admin** : `admin@nasande-vins.cg` (mot de passe généré, communiqué hors dépôt)
+
+> Le plan gratuit met le service en veille après inactivité (premier chargement ~30 s)
+> et la base gratuite `epsv-db` **expire le 13 novembre 2026**. Pour une boutique en
+> production, passer le service en `starter` et la base en plan payant avant cette date.
+
 ## 1. Ce que crée le blueprint
 
 - `nasande-vins-db` : PostgreSQL (plan gratuit pour la démo, à passer en payant pour la production).
@@ -94,12 +106,20 @@ php artisan key:generate --show          # en local, copier la valeur
 
 ## 4. Premier administrateur
 
-Le catalogue est créé par le seeding. Pour créer un compte admin :
+Le compte admin est créé au démarrage du conteneur par `docker/start.sh`, à partir des
+variables `ADMIN_EMAIL`, `ADMIN_PASSWORD` et `ADMIN_NAME` (idempotent : le compte n'est
+pas modifié s'il existe déjà). Ces variables sont positionnées dans Render, jamais dans
+le dépôt.
+
+Pour créer un autre admin ou réinitialiser un mot de passe :
 
 ```bash
-render ssh srv-xxxxx
-php artisan tinker --execute="\App\Models\User::create(['name'=>'Admin','email'=>'vous@exemple.cg','password'=>bcrypt('mot-de-passe-fort'),'role'=>'admin','email_verified_at'=>now()]);"
+php artisan vins:admin autre@exemple.cg --name="Prénom Nom"
+php artisan vins:admin admin@nasande-vins.cg --force   # nouveau mot de passe généré
 ```
+
+Sur Render, exécuter ces commandes via le Shell du dashboard (SSH nécessite d'ajouter
+votre clé publique au compte Render).
 
 ## 5. Vérifications après déploiement
 
@@ -119,10 +139,15 @@ Parcours à tester dans le navigateur :
 
 ## 6. Domaine et montée en charge
 
+- **Dépôt public** : Render a été connecté via l'URL publique du dépôt, sans GitHub App.
+  Si le dépôt repasse en privé, les déploiements échoueront : installer alors la GitHub App
+  Render sur le dépôt (Dashboard → Account Settings → GitHub).
+- **Auto-deploy** : à vérifier après un push ; sinon déclencher manuellement :
+  `render deploys create srv-dbc89k1srm7s73fvlevg --confirm`.
 - **Domaine** : Render → Settings → Custom Domains, puis `vins.nasande.cg` (CNAME vers l'URL Render).
-  Mettre à jour `APP_URL` et `SESSION_SECURE_COOKIE=true`.
-- **Plan** : le plan gratuit met le service en veille et la base gratuite expire. Pour une boutique
-  réelle, passer le service en `starter` et la base en `0.5c-1g` minimum.
+  Mettre à jour `APP_URL` et conserver `SESSION_SECURE_COOKIE=true`.
+- **Plan** : le plan gratuit met le service en veille et la base gratuite expire le 13/11/2026.
+  Pour une boutique réelle, passer le service en `starter` et la base en `0.5c-1g` minimum.
 - **Fichiers** : le catalogue utilise des SVG versionnés dans `public/images/vins` (aucun stockage
   persistant requis). Les photos uploadées depuis l'admin vont dans `storage/app/public` : sur Render,
   ajouter un disque persistant monté sur `/var/www/html/storage/app/public` ou brancher S3.
